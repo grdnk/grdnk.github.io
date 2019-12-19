@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css?family=Sarabun');
+
+html, body {
+    font-family: 'Sarabun', sans-serif !important;
+    background: #222;
+    color: #fff;
+}
+
+a.uk-link {
+    display: inline-block;
+    position: relative;
+    text-decoration: none !important;
+}
+a.uk-link::before {
+    display: block;
+    position: absolute;
+    content: "";
+    height: 2px;
+    width: 0;
+    background: #515181;
+    transition: width 0.3s ease-in-out;
+    left: 0;
+    bottom: 0;
+}
+a.uk-link:hover::before {
+    width: 100%;
+    text-decoration: none;
+}
+.my-photo { border: 2px solid #fff }

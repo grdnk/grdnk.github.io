@@ -1,0 +1,796 @@
+<!doctype html>
+<html>
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <title>Store</title>
+  </head>
+  <body>
+  
+	<!-- NAVBAR -->
+    <nav class="navbar navbar-light" id="main-navbar">
+        <div class="container-fluid">
+            <button class="navbar-toggler navbar-btn" type="button" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span><img src="assets/images/burger.svg" class="navbar-icon-change" alt=""></span>
+            </button>
+
+            <a class="navbar-brand" href="/">
+                <img src="assets/images/logo.svg" alt="">
+            </a>
+
+            <div class="img-menu d-flex justify-content-around">
+                    <div class="dropdown user-icon">
+                        <a class="" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <img src="assets/images/user.svg" alt="">
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item" href="/personal">Personal cabinet'</a><!-- Personal cabinet -->
+                                <a class="dropdown-item" href="/auth/logout">Log out</a><!-- Log out -->
+                                <a class="dropdown-item" href="/auth">Sign in</a><!-- Personal cabinet -->
+                                <a class="dropdown-item" href="/auth/signup">Sign up'</a><!-- Log out -->
+                        </div>
+                    </div>
+                    <a href="/personal/favorites" class="favorite-img-menu" id="favorite-btn">
+                        <img src="assets/images/Shape.svg" alt="">
+                    </a>
+                <a href="/cart" class="center-icon active" id="cart-btn">
+                    <img src="assets/images/bag.svg" alt="">
+                </a>
+            </div>
+			<div class="form-row" id="lang-select">
+				<div class="">
+					<div class="btn-group dropdown dropdown-lang">
+						<button class="dropdown-toggle" type="submit" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							en
+						</button>
+						<div class="dropdown-menu dropdown-menu-right">
+							<a class="dropdown-item" href="/lang?lang={{ language }}">de <img src="assets/images/lang/de.png" alt=""></a>
+						</div>
+					</div>
+				</div>
+			</div>
+        </div>
+    </nav>
+    <nav class="collapsed overlay-menu" id="navbarSupportedContent">
+        <div class="collapse-menu">
+            <form class="w-380 container-fluid my-3" action="/products">
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <div class="input-group-text"><img src="assets/images/search.svg" alt=""></div>
+                    </div>
+                    <input type="text" class="form-control bg-transparent form-control-sm border-top-0 border-left-0 border-right-0" name="query" placeholder="What are you searching for?">
+                </div>
+            </form>
+            <ul class="my-auto">
+                <li><a href="/products">Products</a></li>
+                <li><a href="/about">About</a></li>
+                <li><a href="">Blog</a></li>
+                <li><a href="/faq">FAQ</a></li>
+                <li><a href="/contacts">Contact</a></li>
+                <li><a href="/delivery">Delivery</a></li>
+            </ul>
+            <p class="my-3">No customs. Anonymity. Reliability</p>
+        </div>
+    </nav>
+   
+   <!--SLIDER-->
+    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active d-flex align-items-center">
+         <div class="col-auto position-absolute">
+            <h1 class="text-slider">The most effective potention boost</h1>
+            <p class="text-description-slider">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec porta nisl.</p>
+            <button type="submit" class="btn btn-sect px-5">buy now</button>
+         </div>
+          <img src="assets/images/slider.png" alt="First slide">
+        </div>
+      </div>
+
+    </div>
+   
+   <!--CONTENT-->
+   <section id="advantages">
+       <div class="container-fluid">
+           <h1 class="name-section">Our advantages</h1>
+           <div class="row">
+               <div class="col-6">
+                   <img src="assets/images/target.svg" alt="">
+                   <h5 class="header">No customs</h5>
+                   <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur, quia.</p>
+               </div>
+               <div class="col-6">
+                   <img src="assets/images/shield.svg" alt="">
+                   <h5 class="header">Total anonymity</h5>
+                   <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur, quia.</p>
+               </div>
+               <div class="col-6">
+                   <img src="assets/images/medal.svg" alt="">
+                   <h5 class="header">Reliability</h5>
+                   <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur, quia.</p>
+               </div>
+               <div class="col-6">
+                   <img src="assets/images/flag.svg" alt="">
+                   <h5 class="header">100&#37; delivery</h5>
+                   <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur, quia.</p>
+               </div>
+           </div>
+       </div>
+   </section>
+   
+   <section id="sales">
+       <div class="container-fluid">
+           <h1 class="name-section">Best sellers</h1>
+           <div class="row">
+               <div class="col-6 col-md-4 p-2">
+                <div class="card border">
+                  <span class="label-hot">Hot</span>
+                  <img class="card-img-top" src="assets/images/sv.png" alt="">
+                  <div class="card-body">
+                    <h5 class="product">Viagra Professional, 50mg</h5>
+                    <div class="info">
+                        <p class="info-description">Tablets in blister</p>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center d-flex mt-2">
+                        <div class="price">39.99 &euro;</div>
+						<button class="favorite product-favorite active" data-id="{{ item.id }}">
+							<i class="fas fa-heart"></i>
+						</button>
+                   </div>
+                    <a href="product.html" class="mt-3 btn btn-accent full-btn-tablet">buy now</a>
+                  </div>
+                </div>
+                </div>
+               <div class="col-6 col-md-4 col-md-4 p-2">
+                <div class="card border">
+                 <span class="label-new">New</span>
+                  <img class="card-img-top" src="assets/images/kamagra.png" alt="">
+                  <div class="card-body">
+                    <h5 class="product">Viagra Professional, 50mg</h5>
+                    <div class="info">
+                        <p class="info-description">Tablets in blister</p>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center d-flex mt-2">
+                        <div class="price">39.99 &euro;</div>
+						<button class="favorite product-favorite" data-id="{{ item.id }}">
+							<i class="fas fa-heart"></i>
+						</button>
+                   </div>
+                    <a href="product.html" class="mt-3 btn btn-accent full-btn-tablet">buy now</a>
+                  </div>
+                </div>
+               </div>
+               <div class="col-6 col-md-4 p-2">
+                <div class="card border">
+                 <span class="label-sale">Sale</span>
+                  <img class="card-img-top" src="assets/images/levitra.png" alt="">
+                  <div class="card-body">
+                    <h5 class="product">Viagra Professional, 50mg</h5>
+                    <div class="info">
+                        <p class="info-description">Tablets in blister</p>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center d-flex mt-2">
+                        <div class="price">39.99 &euro;</div>
+						<button class="favorite product-favorite" data-id="{{ item.id }}">
+							<i class="fas fa-heart"></i>
+						</button>
+                   </div>
+                    <a href="product.html" class="mt-3 btn btn-accent full-btn-tablet">buy now</a>
+                  </div>
+                </div>
+               </div>
+               <div class="col-6 col-md-4 p-2">
+                <div class="card border">
+                  <img class="card-img-top" src="assets/images/koj.png" alt="">
+                  <div class="card-body">
+                    <h5 class="product">Viagra Professional, 50mg</h5>
+                    <div class="info">
+                        <p class="info-description">Tablets in blister</p>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center d-flex mt-2">
+                        <div class="price">39.99 &euro;</div>
+						<button class="favorite product-favorite" data-id="{{ item.id }}">
+							<i class="fas fa-heart"></i>
+						</button>
+                   </div>
+                    <a href="product.html" class="mt-3 btn btn-accent full-btn-tablet">buy now</a>
+                  </div>
+                </div>
+               </div>
+               <div class="col-6 col-md-4 p-2">
+                <div class="card border">
+                  <img class="card-img-top" src="assets/images/cobra.png" alt="">
+                  <div class="card-body">
+                    <h5 class="product">Viagra Professional, 50mg</h5>
+                    <div class="info">
+                        <p class="info-description">Tablets in blister</p>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center d-flex mt-2">
+                        <div class="price">39.99 &euro;</div>
+						<button class="favorite product-favorite" data-id="{{ item.id }}">
+							<i class="fas fa-heart"></i>
+						</button>
+                   </div>
+                    <a href="product.html" class="mt-3 btn btn-accent full-btn-tablet">buy now</a>
+                  </div>
+                </div>
+               </div>
+               <div class="col-6 col-md-4 p-2">
+                <div class="card border">
+                  <img class="card-img-top" src="assets/images/cg.png" alt="">
+                  <div class="card-body">
+                    <h5 class="product">Viagra Professional, 50mg</h5>
+                    <div class="info">
+                        <p class="info-description">Tablets in blister</p>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center d-flex mt-2">
+                        <div class="price">39.99 &euro;</div>
+						<button class="favorite product-favorite" data-id="{{ item.id }}">
+							<i class="fas fa-heart"></i>
+						</button>
+                   </div>
+                    <a href="product.html" class="mt-3 btn btn-accent full-btn-tablet">buy now</a>
+                  </div>
+                </div>
+               </div>
+               <div class="col-6 col-md-4 p-2">
+                <div class="card border">
+                  <img class="card-img-top" src="assets/images/vp.png" alt="">
+                  <div class="card-body">
+                    <h5 class="product">Viagra Professional, 50mg</h5>
+                    <div class="info">
+                        <p class="info-description">Tablets in blister</p>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center d-flex mt-2">
+                        <div class="price">39.99 &euro;</div>
+						<button class="favorite product-favorite" data-id="{{ item.id }}">
+							<i class="fas fa-heart"></i>
+						</button>
+                   </div>
+                    <a href="product.html" class="mt-3 btn btn-accent full-btn-tablet">buy now</a>
+                  </div>
+                </div>
+               </div>
+               <div class="col-6 col-md-4 p-2">
+                <div class="card border">
+                  <img class="card-img-top" src="assets/images/cialis.png" alt="">
+                  <div class="card-body">
+                    <h5 class="product">Viagra Professional, 50mg</h5>
+                    <div class="info">
+                        <p class="info-description">Tablets in blister</p>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center d-flex mt-2">
+                        <div class="price">39.99 &euro;</div>
+						<button class="favorite product-favorite" data-id="{{ item.id }}">
+							<i class="fas fa-heart"></i>
+						</button>
+                   </div>
+                    <a href="product.html" class="mt-3 btn btn-accent full-btn-tablet">buy now</a>
+                  </div>
+                </div>
+               </div>
+           </div>
+           <button type="submit" class="btn btn-show px-5 mx-auto">show more</button>
+       </div>
+   </section>
+   
+    <section class="hidden-tablet" id="discount">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12">
+                    <img src="assets/images/photo.png" class="img-fluid photo-man" alt="">
+                </div>
+                <div class="col-9">
+                    <h1 class="header">Don`t miss the super sale!</h1>
+                    <p class="description">Attraktive Angebote und Rabatte fr unsere Kunden</p>
+                    <a href="/products" class="btn btn-sect">learn more</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="hidden-mobile" id="discount">
+        <div class="container-fluid">
+            <div class="d-flex align-items-center justify-content-center">
+                <div>
+                    <img src="assets/images/tablet-man.png" class="img-fluid" alt="">
+                </div>
+                <div>
+                    <h1 class="header">Don`t miss the super sale!</h1>
+                    <p class="description">Attraktive Angebote und Rabatte fr unsere Kunden</p>
+                    <a href="/products" class="btn btn-sect">learn more</a>
+                </div>
+            </div>
+        </div>
+    </section>
+   
+   <section id="new">
+       <div class="container-fluid">
+           <h1 class="name-section">New in</h1>
+           <div class="row">
+               <div class="col-6 col-md-4 p-2">
+                <div class="card border">
+                  <span class="label-new">New</span>
+                  <img class="card-img-top" src="assets/images/sv.png" alt="">
+                  <div class="card-body">
+                    <h5 class="product">Viagra Professional, 50mg</h5>
+                    <div class="info">
+                        <p class="info-description">Tablets in blister</p>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center d-flex mt-2">
+                        <div class="price">39.99 &euro;</div>
+						<button class="favorite product-favorite" data-id="{{ item.id }}">
+							<i class="fas fa-heart"></i>
+						</button>
+                   </div>
+                    <a href="product.html" class="mt-3 btn btn-accent full-btn-tablet">buy now</a>
+                  </div>
+                </div>
+                </div>
+               <div class="col-6 col-md-4 p-2">
+                <div class="card border">
+                  <img class="card-img-top" src="assets/images/kamagra.png" alt="">
+                  <div class="card-body">
+                    <h5 class="product">Viagra Professional, 50mg</h5>
+                    <div class="info">
+                        <p class="info-description">Tablets in blister</p>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center d-flex mt-2">
+                        <div class="price">39.99 &euro;</div>
+						<button class="favorite product-favorite" data-id="{{ item.id }}">
+							<i class="fas fa-heart"></i>
+						</button>
+                   </div>
+                    <a href="product.html" class="mt-3 btn btn-accent full-btn-tablet">buy now</a>
+                  </div>
+                </div>
+               </div>
+               <div class="col-6 col-md-4 p-2">
+                <div class="card border">
+                  <img class="card-img-top" src="assets/images/levitra.png" alt="">
+                  <div class="card-body">
+                    <h5 class="product">Viagra Professional, 50mg</h5>
+                    <div class="info">
+                        <p class="info-description">Tablets in blister</p>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center d-flex mt-2">
+                        <div class="price">39.99 &euro;</div>
+						<button class="favorite product-favorite" data-id="{{ item.id }}">
+							<i class="fas fa-heart"></i>
+						</button>
+                   </div>
+                    <a href="product.html" class="mt-3 btn btn-accent full-btn-tablet">buy now</a>
+                  </div>
+                </div>
+               </div>
+               <div class="col-6 col-md-4 p-2">
+                <div class="card border">
+                  <img class="card-img-top" src="assets/images/koj.png" alt="">
+                  <div class="card-body">
+                    <h5 class="product">Viagra Professional, 50mg</h5>
+                    <div class="info">
+                        <p class="info-description">Tablets in blister</p>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center d-flex mt-2">
+                        <div class="price">39.99 &euro;</div>
+						<button class="favorite product-favorite" data-id="{{ item.id }}">
+							<i class="fas fa-heart"></i>
+						</button>
+                   </div>
+                    <a href="product.html" class="mt-3 btn btn-accent full-btn-tablet">buy now</a>
+                  </div>
+                </div>
+               </div>
+               <div class="col-6 col-md-4 p-2">
+                <div class="card border">
+                  <img class="card-img-top" src="assets/images/cobra.png" alt="">
+                  <div class="card-body">
+                    <h5 class="product">Viagra Professional, 50mg</h5>
+                    <div class="info">
+                        <p class="info-description">Tablets in blister</p>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center d-flex mt-2">
+                        <div class="price">39.99 &euro;</div>
+						<button class="favorite product-favorite" data-id="{{ item.id }}">
+							<i class="fas fa-heart"></i>
+						</button>
+                   </div>
+                    <a href="product.html" class="mt-3 btn btn-accent full-btn-tablet">buy now</a>
+                  </div>
+                </div>
+               </div>
+               <div class="col-6 col-md-4 p-2">
+                <div class="card border">
+                  <img class="card-img-top" src="assets/images/cg.png" alt="">
+                  <div class="card-body">
+                    <h5 class="product">Viagra Professional, 50mg</h5>
+                    <div class="info">
+                        <p class="info-description">Tablets in blister</p>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center d-flex mt-2">
+                        <div class="price">39.99 &euro;</div>
+						<button class="favorite product-favorite" data-id="{{ item.id }}">
+							<i class="fas fa-heart"></i>
+						</button>
+                   </div>
+                    <a href="product.html" class="mt-3 btn btn-accent full-btn-tablet">buy now</a>
+                  </div>
+                </div>
+               </div>
+               <div class="col-6 col-md-4 p-2">
+                <div class="card border">
+                  <img class="card-img-top" src="assets/images/vp.png" alt="">
+                  <div class="card-body">
+                    <h5 class="product">Viagra Professional, 50mg</h5>
+                    <div class="info">
+                        <p class="info-description">Tablets in blister</p>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center d-flex mt-2">
+                        <div class="price">39.99 &euro;</div>
+						<button class="favorite product-favorite" data-id="{{ item.id }}">
+							<i class="fas fa-heart"></i>
+						</button>
+                   </div>
+                    <a href="product.html" class="mt-3 btn btn-accent full-btn-tablet">buy now</a>
+                  </div>
+                </div>
+               </div>
+               <div class="col-6 col-md-4 p-2">
+                <div class="card border">
+                  <img class="card-img-top" src="assets/images/cialis.png" alt="">
+                  <div class="card-body">
+                    <h5 class="product">Viagra Professional, 50mg</h5>
+                    <div class="info">
+                        <p class="info-description">Tablets in blister</p>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center d-flex mt-2">
+                        <div class="price">39.99 &euro;</div>
+						<button class="favorite product-favorite" data-id="{{ item.id }}">
+							<i class="fas fa-heart"></i>
+						</button>
+                   </div>
+                    <a href="product.html" class="mt-3 btn btn-accent full-btn-tablet">buy now</a>
+                  </div>
+                </div>
+               </div>
+           </div>
+           <button type="submit" class="btn btn-show px-5 mx-auto">show more</button>
+       </div>
+   </section>
+   
+    <section id="reviews" class="pb-1">
+        <div class="container-fluid">
+            <h1 class="name-section">What our clients have to say</h1>
+            <div class="row">
+                <div class="comment-item col-12">
+                    <img src="assets/images/quot.svg" class="position-absolute" style="left: 8px; top: -15px" alt="">
+                    <p class="comment">Everything was impeccable from my order to delivery. Super fast processing and complication-free processing. Medical advice was very good. Will continue to order here. Many thanks for everything!</p>
+                    <p class="author">Jonathan, 61 y.o</p>
+                </div>
+                <div class="comment-item col-12">
+                    <img src="assets/images/quot.svg" class="position-absolute" style="left: 8px; top: -15px" alt="">
+                    <p class="comment">I recommend the preparation Viagra Professional. Viagra helps men achieve and maintain an erection. The effect occurs between 30 minutes and one hour after ingestion. The effect of Viagra lasts 4 - 5 hours. During this time, the sexual act can be performed several times</p>
+                    <p class="author">Zach, 47 y.o</p>
+                </div>
+                <div class="comment-item col-12">
+                    <img src="assets/images/quot.svg" class="position-absolute" style="left: 8px; top: -15px" alt="">
+                    <p class="comment">I only buy Viagra Professional 50 mg. The quality was OK Very good and fast advice. Contact very good. Am really surprised, works great. Can just be recommended</p>
+                    <p class="author">Francisco, 59 y.o</p>
+                </div>
+            </div>
+        </div>
+    </section>
+   
+   <!--
+   <section id="blog">
+       <div class="container-fluid px my-5">
+           <h1 class="name-section my-5">In the news</h1>
+           <div class="row">
+               <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="card">
+                      <img class="card-img-top" src="assets/images/img-card.png" alt="Card image cap">
+                      <div class="card-body">
+                        <h5 class="title">What Happens When You Use Viagra But Don't Have ED</h5>
+                        <p class="text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-accent col-10 mx-auto">read more</a>
+                      </div>
+                    </div>
+               </div>
+               <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="card">
+                      <img class="card-img-top" src="assets/images/img-card1.png" alt="Card image cap">
+                      <div class="card-body">
+                        <h5 class="title">What Happens When You Use Viagra But Don't Have ED</h5>
+                        <p class="text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-accent col-10 mx-auto">read more</a>
+                      </div>
+                    </div>
+               </div>
+               <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="card">
+                      <img class="card-img-top" src="assets/images/img-card2.png" alt="Card image cap">
+                      <div class="card-body">
+                        <h5 class="title">What Happens When You Use Viagra But Don't Have ED</h5>
+                        <p class="text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-accent col-10 mx-auto">read more</a>
+                      </div>
+                    </div>
+               </div>
+               <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="card">
+                      <img class="card-img-top" src="assets/images/img-card3.png" alt="Card image cap">
+                      <div class="card-body">
+                        <h5 class="title">What Happens When You Use Viagra But Don't Have ED</h5>
+                        <p class="text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-accent col-10 mx-auto">read more</a>
+                      </div>
+                    </div>
+               </div>
+           </div>
+           <div class="button-container text-center mt-4">
+               <a href="#" class="btn btn-show">show more</a>
+           </div>
+       </div>
+   </section>
+   -->
+   
+    <section id="subscribe">
+        <div class="container-fluid my-5">
+            <div class="row text-center">
+                <div class="col-12 wrapper-text">
+                    <h1 class="header">Join our newsletter</h1>
+                    <p class="description">Be first to know about new in`s, sales and other news. Don’t miss your chance to shop profitably!</p>
+                </div>
+                <div class="col-12">
+                    <div class="group">
+                        <input type="text" style="background-color: transparent;color: #fff" id="subscribe-email" placeholder=" " required>
+                        <span class="highlight"></span>
+                        <span class="bar"></span>
+                        <label>Please enter your email here</label>
+                        <div class="invalid-feedback"></div>
+                    </div>
+                    <button type="submit" class="btn btn-sect btn-tablet" id="subscribe-btn">subscribe</button>
+                </div>
+            </div>
+        </div>
+    </section>
+   
+    <section class="hidden-tablet" id="footer">
+        <div class="container-fluid my-3">
+            <hr>
+            <div class="d-flex align-items-center justify-content-between">
+                <div>
+                    <img src="assets/images/logo-footer.svg" alt="">
+                </div>
+                <div class="text-center">
+                    <button class="to-top" id="scroll-to-top"><img src="assets/images/to-top.svg" alt=""></button>
+                    <p class="text-to-top mt-1">To the top</p>
+                </div>
+            </div>
+            <p class="copyright">&copy; 2018, Pharm13. All Rights Reserved.</p>
+        </div>
+    </section>
+    <section class="hidden-mobile" id="footer">
+        <div class="container-fluid my-3">
+            <hr>
+            <div class="d-flex align-items-center justify-content-between">
+                <div>
+                    <img src="assets/images/logo-footer.svg" alt="">
+                </div>
+                <p class="copyright">&copy; 2018, Pharm13. All Rights Reserved.</p>
+                <div class="text-center">
+                    <button class="to-top" id="scroll-to-top"><img src="assets/images/to-top.svg" alt=""></button>
+                    <p class="text-to-top mt-1">To the top</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CHECKOUT MODAL -->
+    <div class="modal fade" id="checkoutModal" tabindex="-1" role="dialog" aria-labelledby="checkoutModal" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true"><img src="assets/images/close.png" alt=""></span>
+            </button>
+          </div>
+         <h1 class="name-section my-4">Shopping cart</h1>
+          <div class="shop-list">
+            <div class="shop-list-item d-flex align-items-center">
+              <button type="submit"><img src="assets/images/remove.svg" alt=""></button>
+              <div class="product"><img src="assets/images/vp.png" alt=""></div>
+              <div>
+                  <h5 class="product-name">Viagra Professional, 50mg</h5>
+                  <p class="price">249</p>
+              </div>
+            </div>
+            <div class="shop-list-item d-flex align-items-center">
+              <button type="submit"><img src="assets/images/remove.svg" alt=""></button>
+              <div class="product"><img src="assets/images/levitra.png" alt=""></div>
+              <div>
+                  <h5 class="product-name">Viagra Professional, 50mg</h5>
+                  <p class="price"><span class="num">3</span>249</p>
+              </div>
+            </div>
+            <div class="shop-list-item d-flex align-items-center">
+              <button type="submit"><img src="assets/images/remove.svg" alt=""></button>
+              <div class="product"><img src="assets/images/kamagra.png" alt=""></div>
+              <div>
+                  <h5 class="product-name">Viagra Professional, 50mg</h5>
+                  <p class="price"><span class="num">2</span>249</p>
+              </div>
+            </div>
+            <div class="shop-list-item d-flex align-items-center">
+              <button type="submit"><img src="assets/images/remove.svg" alt=""></button>
+              <div class="product"><img src="assets/images/cobra.png" alt=""></div>
+              <div>
+                  <h5 class="product-name">Viagra Professional, 50mg</h5>
+                  <p class="price">249</p>
+              </div>
+            </div>
+          </div>
+           <div class="container-fluid my-4">
+                <div class="total">
+                    <div class="d-flex justify-content-between align-self-center align-items-center">
+                        <p class="total">Subtotal:</p>
+                        <p class="sum">614 &euro;</p>
+                    </div>
+                    <div class="d-flex justify-content-between align-self-center align-items-center">
+                        <p class="shipp">Shipping:</p>
+                        <p class="shipp-sum">0 &euro;</p>
+                    </div>
+                    <hr>
+                    <div class="d-flex justify-content-between align-self-center align-items-center my-3">
+                        <p class="total">Total:</p>
+                        <p class="sum">614 &euro;</p>
+                    </div>
+                    <button type="submit" class="btn btn-sect btn-block">checkout</button>
+                    <button type="submit" class="btn btn-show btn-block">continue shopping</button>
+                </div>
+           </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="modal fade" id="oneClickModal" tabindex="-1" role="dialog" aria-labelledby="oneClickModal" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content modal-bg">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true"><img src="assets/images/close.png" alt=""></span>
+            </button>
+          </div>
+          <div class="modal-text container-fluid text-center my-auto">
+              <img src="assets/images/one-click.png" alt="">
+              <h1 class="name-section">Buy in one click — save your time</h1>
+              <div class="group">
+                  <input type="text" style="background-color: transparent;color: #000" required placeholder=" ">
+                  <span class="highlight"></span>
+                  <span class="bar"></span>
+                  <label>Name</label>
+              </div>
+              <div class="group">
+                  <input type="text" style="background-color: transparent;color: #000" required placeholder=" ">
+                  <span class="highlight"></span>
+                  <span class="bar"></span>
+                  <label>Phone</label>
+              </div>
+              <button type="submit" class="btn btn-sect mx-auto">buy now</button>
+          </div>
+        </div>
+      </div>
+    </div>
+      
+    <div class="modal fade" id="messageModal" tabindex="-1" role="dialog" aria-labelledby="messageModal" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content modal-bg">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true"><img src="assets/images/close.png" alt=""></span>
+            </button>
+          </div>
+          <section class="modal-text container-fluid text-center my-auto">
+              <img src="assets/images/plane.svg" alt="">
+              <h1 class="name-section">Your message has been sent successfully</h1>
+              <p>We will get back to you shortly to answer all your questions and to help with anything!</p>
+              <button type="submit" class="btn btn-sect mx-auto" data-dismiss="modal">got it</button>
+          </section>
+        </div>
+      </div>
+    </div>
+    
+    <div class="modal fade" id="subsModal" tabindex="-1" role="dialog" aria-labelledby="subsModal" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content modal-bg">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true"><img src="assets/images/close.png" alt=""></span>
+            </button>
+          </div>
+          <div class="modal-text container-fluid text-center my-auto">
+              <img src="assets/images/newsletter.svg" alt="">
+              <h1 class="name-section">Thank you for subscription!</h1>
+              <p>We promise we won’t disturb you with junk infromation, because we care about our customers.</p>
+              <button type="submit" class="btn btn-sect mx-auto" data-dismiss="modal">got it</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+<div class="modal fade" id="orderModal" tabindex="-1" role="dialog" aria-labelledby="orderModal" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+	<div class="modal-content modal-bg">
+	  <div class="modal-header">
+		<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		  <span aria-hidden="true"><img src="/assets/images/close.png" alt=""></span>
+		</button>
+	  </div>
+	  <div class="modal-text container-fluid text-center my-auto">
+		  <img src="/assets/images/order.svg" alt="">
+		  <h1 class="name-section">{{ trans('Thanks for your order') }}!</h1>
+		  <p>{{ trans('Our manager will contact you shortly to clarify details of your order') }}.</p>
+	  </div>
+	</div>
+  </div>
+</div>
+      
+<div class="modal fade" id="deleteModal" tabindex="-1" role="dialog" aria-labelledby="deleteModal" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+	<div class="modal-content modal-bg">
+	  <div class="modal-header">
+		<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		  <span aria-hidden="true"><img src="assets/images/close.png" alt=""></span>
+		</button>
+	  </div>
+	  <section class="modal-text container-fluid text-center my-auto">
+		  <img src="assets/images/attention.svg" alt="">
+		  <h1 class="name-section">You’re about to delete your account</h1>
+		  <p>Are you sure that you want to delete your account?</p>
+		  <button type="submit" class="btn btn-sect mx-auto" data-dismiss="modal">I'm sure guys</button>
+	  </section>
+	</div>
+  </div>
+</div>
+    
+<div class="modal fade" id="emptyModal" tabindex="-1" role="dialog" aria-labelledby="emptyModal" aria-hidden="true" data-backdrop="static" data-keyboard="false">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content modal-bg">
+            <section class="modal-text container-fluid text-center my-auto">
+                <img src="assets/images/cart.svg" alt="">
+                <h1 class="name-section">{{ trans('Oh no, something went wrong') }}!</h1>
+                <p>{{ trans('Your cart is empty, add products for ordering') }}.</p>
+                <a href="/products" class="btn btn-sect mx-auto">{{ trans('Shop now') }}</a>
+            </section>
+        </div>
+    </div>
+</div>
+    
+<div class="modal fade" id="authModal" tabindex="-1" role="dialog" aria-labelledby="authModal" aria-hidden="true" data-backdrop="static" data-keyboard="false">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content modal-bg">
+            <section class="modal-text container-fluid text-center my-auto">
+                <img src="assets/images/lock.png" alt="">
+                <h1 class="name-section">{{ trans('You must be authorized to view your favorites') }}</h1>
+                <p>{{ trans('Please Sign in or Sign up to send your review. Do not worry, your review will be saved after saved after these steps.') }}</p>
+                <a href="/products" class="btn btn-sect mx-auto">{{ trans('sign in') }}</a>
+                <p class="help mt-3">{{ trans('Don`t have an account') }}? <a href="/auth/signup">{{ trans('Sign up') }}</a></p>
+            </section>
+        </div>
+    </div>
+</div>
+    
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/menu.js"></script>
+    <script src="assets/js/scroll-navbar.js"></script>
+  </body>
+</html>

@@ -1,0 +1,43 @@
+.outline {color: rgb(95, 197, 190); background-color:transparent; background-image:none; border: 2px solid rgb(95, 197, 190); border-radius: 500px}
+
+.outline:hover {color:#fff; background-color: rgb(95, 197, 190); border-color: rgb(95, 197, 190)}
+
+.minus {font-size: 18px; color: rgb(245, 0, 0); font-weight: bold}
+
+.plus {font-size: 18px; color: rgb(0, 135, 54); font-weight: bold}
+
+date {font-weight: 600; font-size: 15px; color: rgb(62, 61, 66); font-weight: bold}
+
+.amount-due {
+    background-image: linear-gradient( 0deg, rgb(0,116,41) 0%, rgb(134,208,115) 100%);
+    background-image: -moz-linear-gradient( 0deg, rgb(0,116,41) 0%, rgb(134,208,115) 100%);
+    background-image: -webkit-linear-gradient( 0deg, rgb(0,116,41) 0%, rgb(134,208,115) 100%);
+    background-image: -ms-linear-gradient( 0deg, rgb(0,116,41) 0%, rgb(134,208,115) 100%);
+    background-position: 0 0, 0 100%;
+    background-size: 100% 10px;
+    background-repeat: no-repeat;
+}
+
+.auto-pay {
+    background-image: linear-gradient( 0deg, rgb(0,103,198) 0%, rgb(53,196,238) 100%);
+    background-image: -moz-linear-gradient( 0deg, rgb(0,103,198) 0%, rgb(53,196,238) 100%);
+    background-image: -webkit-linear-gradient( 0deg, rgb(0,103,198) 0%, rgb(53,196,238) 100%);
+    background-image: -ms-linear-gradient( 0deg, rgb(0,103,198) 0%, rgb(53,196,238) 100%);
+    background-position: 0 0, 0 100%;
+    background-size: 100% 10px;
+    background-repeat: no-repeat;
+}
+
+.uk-button-link {font-size: 17px; color: rgb(95, 197, 190); font-weight: bold}
+
+.uk-button-link:after {content: " >"}
+
+.uk-card .period {font-size: 14px; color: rgb(117, 115, 125); line-height: 1.2}
+
+.uk-card .price {font-size: 45px; color: rgb(62, 61, 66); font-weight: bold; line-height: 1}
+
+.price:first-letter {font-size: 35px}
+
+.uk-card .date {font-size: 14px; color: rgb(117, 115, 125); line-height: 1.571}
+
+.uk-card p {font-size: 16px; color: rgb(62, 61, 66); line-height: 1.875}

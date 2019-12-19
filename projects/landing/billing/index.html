@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Billing</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/uikit.css" />
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
+    <body>
+       <div class="uk-section uk-section-muted">
+           <div class="uk-container uk-container-small uk-text-center uk-flex uk-flex-between">
+            <div class="uk-child-width-1-2@m uk-grid-medium uk-grid-match uk-flex" uk-grid>
+                <div>
+                    <div class="uk-card uk-card-default uk-card-body uk-border-rounded amount-due">
+                       <img src="icons/icon_amount_green.svg" width="60" height="61" alt="">
+                        <h3 class="uk-card-title uk-text-uppercase">Amount Due</h3>
+                        <p class="period">Billing period <span class="uk-text-bold">01/02/2018 - 01/31/2018</span></p>
+                        <p class="price">$50</p>
+                        <p class="date">Due date <date>02/28/2018</date></p>
+                        <button class="uk-button uk-button-link uk-display-block uk-align-center">View my bill</button>
+                        <button class="uk-button outline uk-width-1-2@s">Pay</button>
+                    </div>
+                </div>
+                <div>
+                    <div class="uk-card uk-card-default uk-card-body uk-border-rounded auto-pay uk-flex uk-flex-column uk-flex-middle uk-flex-wrap">
+                       <img src="icons/icon_auto_pay.svg" width="60" height="61" alt="">
+                        <h3 class="uk-card-title uk-text-uppercase">Auto-Pay</h3>
+                        <p>You already have auto payment via Stripe/PayPal on sum <span class="uk-text-bold">$57</span> and is paid automatically on 17-th day of month. Next payment will be done on <date>12/17/2017</date></p>
+                        <button class="uk-button outline uk-width-1-2@s uk-margin-auto-top">Manage</button>
+                    </div>
+                </div>
+            </div>
+           </div>
+           <div class="uk-container uk-margin-medium-top">
+                <div class="uk-card uk-card-default uk-card-body uk-border-rounded">
+                    <h3 class="uk-card-title uk-text-uppercase uk-text-center uk-margin-bottom">Last account activities</h3>
+                    <div class="uk-overflow-auto">
+                    <table class="uk-table uk-table-divider uk-container uk-container-small">
+                        <thead class="uk-background-muted">
+                            <tr>
+                                <th>Date</th>
+                                <th>Activity</th>
+                                <th>Sum</th>
+                                <th>Balance</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><date>12/11/17</date><span class="uk-display-block uk-text-small">05:43 pm</span></td>
+                                <td class="uk-flex uk-flex-middle">Internet fee</td>
+                                <td><span class="minus">- $1.00</span></td>
+                                <td><span class="plus">$19.00</span></td>
+                            </tr>
+                            <tr>
+                                <td><date>12/11/17</date><span class="uk-display-block uk-text-small">05:27 pm</span></td>
+                                <td>Payment via PayPal</td>
+                                <td><span class="plus">$10.00</span></td>
+                                <td><span class="plus">$18.00</span></td>
+                            </tr>
+                            <tr>
+                                <td><date>12/11/17</date><span class="uk-display-block uk-text-small">12:52 pm</span></td>
+                                <td>Internet fee</td>
+                                <td><span class="minus">- $50.00</span></td>
+                                <td><span class="minus">- $8.00</span></td>
+                            </tr>
+                            <tr>
+                                <td><date>12/11/17</date><span class="uk-display-block uk-text-small">12:52 pm</span></td>
+                                <td>Payment via PayPal</td>
+                                <td><span class="plus">$10.00</span></td>
+                                <td><span class="plus">$18.00</span></td>
+                            </tr>
+                            <tr>
+                                <td><date>12/11/17</date><span class="uk-display-block uk-text-small">12:52 pm</span></td>
+                                <td>Payment via PayPal</td>
+                                <td><span class="plus">$1.00</span></td>
+                                <td><span class="plus">$8.00</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    </div>
+                    <button class="uk-button uk-button-link uk-display-block uk-align-center">All transactions</button>
+                </div>
+           </div>
+       </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="js/uikit.min.js"></script>
+    </body>
+</html>

@@ -2,263 +2,98 @@
 <html>
 <head>
     <meta charset="UTF-8">
+    <title>Grdnk</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, shrink-to-fit=no">
-    <title>Hrdnk</title>
-    <link rel="stylesheet" href="scss/style.css">
-    <link rel="stylesheet" href="https://use.typekit.net/vmz2gfd.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0, shrink-to-fit=no">
+    <meta name="description" content="front-end developer in Kyiv, html coder, georgiy gorodenko, grdnk, markup developer" />
+    <link rel="stylesheet" href="dist/css/uikit.min.css">
+    <link rel="stylesheet" href="dist/css/style.css">
 </head>
-<body class="dark-theme">
-   
-    <!-- PROGRESS BAR -->
-
-        <div class="percent">
-            <div class="fill"></div>
-            <div class="counter"><h1 class="num"></h1></div>
+<body>
+    
+    <div class="uk-section uk-section-secondary" style="min-height:100vh">
+        <div class="uk-container uk-container-small">
+            <div class="uk-flex uk-flex-around@m uk-child-width-1-2@s" uk-grid>
+                <div uk-overflow-auto>
+                    <ul class="uk-list">
+                        <li class="uk-margin-bottom">
+                            <h2>Latest</h2>
+                        </li>
+                        <li><a href="projects/itproger/" class="uk-link" target="_blank">itProger</a> &amp; <a href="projects/itproger/studio/" class="uk-link" target="_blank">itProger Studio</a> &amp; <a href="projects/itproger/front-end.html" class="uk-link" target="_blank">Front - end courses</a></li>
+                    </ul>
+                    <ul class="uk-list">
+                        <li class="uk-margin-bottom">
+                            <h2>Commercial project</h2>
+                        </li>
+                        <li><a href="projects/pharm13/" class="uk-link" uk-tooltip="title: Only mobile version for preview; pos: right" target="_blank">Pharm13</a></li>
+                        <li><a href="projects/landing/shop/" class="uk-link" target="_blank">Shop</a></li>
+                        <li><a href="projects/dashboard/" class="uk-link" uk-tooltip="title: Beautiful tables for TV screens only; pos: right" target="_blank">Dashboard</a></li>
+                    </ul>
+                    <ul class="uk-list">
+                        <li class="uk-margin-bottom">
+                            <h2>Landing page</h2>
+                        </li>
+                        <li><a href="projects/pharm13/landing/" class="uk-link" target="_blank">Viagra</a></li>
+                        <li><a href="http://coocoprint.com/" class="uk-link" target="_blank">Cooco Print</a></li>
+                        <li><a href="projects/landing/finwiki/" class="uk-link" target="_blank">FinWiki</a></li>
+                        <li><a href="projects/landing/x/" class="uk-link" uk-tooltip="title: For fun; pos: right" target="_blank">X</a></li>
+                        <li><a href="projects/landing/billing/" class="uk-link" target="_blank">Billing</a></li>
+                    </ul>
+                    <ul class="uk-list">
+                        <li class="uk-margin-bottom">
+                            <h2>E-mail's</h2>
+                        </li>
+                        <li><a href="projects/pharm13/mails/black-friday.html" class="uk-link" target="_blank">Black Friday</a></li>
+                        <li><a href="projects/pharm13/mails/--nc_mail_found/" class="uk-link" target="_blank">Mailing Pharm13</a></li>
+                    </ul>
+                </div>
+                <div class="uk-flex-first uk-flex-last@s uk-text-center">
+                    <img src="dist/img/foto.jpg" class="uk-border-circle my-photo" alt="" width="200" uk-img>
+                    <h4 class="uk-margin-top uk-text-center">Front - End developer</h4>
+                    <ul uk-accordion>
+                        <li class="uk-open">
+                            <a class="uk-accordion-title" href="#">Skills</a>
+                            <div class="uk-accordion-content uk-text-left">
+                                <ul class="uk-list uk-list-bullet">
+                                    <li>HTML, CSS, Javascript</li>
+                                    <li>Bootstrap, Materialize, UIkit</li>
+                                    <li>WordPress/ landing, PageKit/ landing, GravCms</li>
+                                    <li>Pug, Gulp, SASS/ SCSS</li>
+                                    <li>Git</li>
+                                    <li>Base php&amp;mysql + Twig template</li>
+                                    <li>Base React.js</li>
+                                    <li>Making markup with Photoshop/ Avocode/ Figma</li>
+                                    <li>E-mail's</li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <a class="uk-accordion-title" href="#">Contacts</a>
+                            <div class="uk-accordion-content uk-text-left">
+                                <ul class="uk-list uk-margin-left">
+                                    <li>Phone: <a href="tel:0934476644"> 0934476644</a></li>
+                                    <li>Email: <a href="mailto:georgiy.gorodenko@gmail.com"> georgiy.gorodenko@gmail.com</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
-
-    <!-- END PROGRESS BAR -->
+    </div>
     
-    <!-- CONTENT PART -->
-    
-<!--    <div class="smooth-scroll-wrapper">-->
-       
-        <section class="works">
-            <div class="container">
-                <div class="row">
-                    <div class="col">
-                        <h2 class="title">Basic projects</h2>
-                        <ul class="works_list">
-                            <h3 class="subtitle">Landing page</h3>
-                            <li><a href="#">Cooco Print</a></li>
-                            <li><a href="#">FinWiki</a></li>
-                            <li><a href="#">Billing</a></li>
-                        </ul>
-                    </div>
-                    <div class="col">
-                        <ul class="works_list">
-                            <h3 class="subtitle">Test cases</h3>
-                            <li><a href="#">Border</a></li>
-                            <li><a href="#">Echo</a></li>
-                            <li><a href="#">Triangle</a></li>
-                            <li><a href="#">Carousel</a></li>
-                            <li><a href="#">Pari Match</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-       
-<!--
-<div class="hamburger">
-	<div class="hamburger--container">
-		<div class="hamburger--bars">
-			
-		</div>
-	</div>
-</div>
--->
-       
-       
-        <section class="full_cases">
-            <div class="container">
-                <h2 class="title">Full cases</h2>
-                <h3 class="subtitle">full projects and small description (markup only)</h3>
-                <div class="cases">
-                    <div class="card">
-                        <div class="block-anim">
-                            <div class="decor-line"></div>
-                            <div class="fix-wrapper">
-                                <div class="container">
-                                    <button class="content__back" aria-label="Back to main view"></button>
-                                    <div class="blahblah">
-                                        <div class="description">
-                                            <h5 class="card-title">itProger</h5>
-                                            <p>itProger is online school teach of programming language, from <span class="italy-font">Ruby</span> to <span class="italy-font">Python</span> and <span class="italy-font">JS</span>, authors methods teaching, interesting tasks for practical skills. Have a colorful fresh design. Total &#43;&#45; 12 pages</p>
-                                            <p><a href="https://www.youtube.com/c/gosha_dudar">YouTube</a></p>
-                                            <ul class="prod_list">
-                                                <p>Production list:</p>
-                                                <li class="prod_list-item">itProger</li>
-                                                <li class="prod_list-item">itProger Studio</li>
-                                                <li class="prod_list-item">Front-end courses</li>
-                                            </ul>
-                                            <i class="fas fa-arrow-up"></i>
-                                        </div>
-                                        <div class="images">
-                                            <div class="scroll-el">
-                                                <img src="img/works/itprgr/screen_main.png" alt="">
-                                            </div>
-                                            <div class="scroll-el">
-                                                <img src="img/works/itprgr/screen_main.png" alt="">
-                                            </div>
-                                            <div class="scroll-el">
-                                                <img src="img/works/itprgr/screen_main.png" alt="">
-                                            </div>
-                                            <div class="scroll-el">
-                                                <img src="img/works/itprgr/screen_main.png" alt="">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="cases_item" data-tilt data-tilt-glare="true" data-tilt-perspective="1000">
-                            <img src="img/works/full/itprgr.png" alt="">
-                            <div class="tr-bl">
-                                <h4 class="cases_title">Itprgr</h4>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="block-anim">
-                            <div class="decor-line"></div>
-                            <div class="fix-wrapper">
-                                <div class="container">
-                                    <button class="content__back" aria-label="Back to main view"></button>
-                                    <div class="blahblah">
-                                        <div class="description">
-                                            <h5 class="card-title">Pharm13</h5>
-                                            <p>Welcome to online store with wonderful design and UX, project split on two parts, mobile <span class="italy-font">&amp;</span> tablet and desktop version (dont ask me why, i dont know), project translated to three lang, total pages - 44</p>
-                                            <ul class="prod_list">
-                                                <p>Production list:</p>
-                                                <li class="prod_list-item">Store Pharm13</li>
-                                                <li class="prod_list-item">E-mail's</li>
-                                                <li class="prod_list-item">Shop landing</li>
-                                                <li class="prod_list-item">CRM Dashboard</li>
-                                                <li class="prod_list-item">Viagra landings</li>
-                                            </ul>
-                                            <i class="fas fa-long-arrow-alt-up"></i>
-                                        </div>
-                                        <div class="images">
-                                            <div class="scroll-el">
-                                                <img src="img/works/pharm13/screen_main.png" alt="">
-                                            </div>
-                                            <div class="scroll-el">
-                                                <img src="img/works/pharm13/screen_main.png" alt="">
-                                            </div>
-                                            <div class="scroll-el">
-                                                <img src="img/works/pharm13/screen_main.png" alt="">
-                                            </div>
-                                            <div class="scroll-el">
-                                                <img src="img/works/pharm13/screen_main.png" alt="">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="cases_item" data-tilt data-tilt-glare="true" data-tilt-perspective="1000">
-                            <img src="img/works/full/pharm13.png" alt="">
-                            <div class="tr-bl">
-                                <h4 class="cases_title">Pharm13</h4>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="fsmenu">
-                            <div class="decor-line"></div>
-                            <div class="fsmenu--container">
-                                <div class="container">
-                                    <button class="content__back" aria-label="Back to main view"></button>
-                                    <div class="blahblah">
-                                        <div class="description">
-                                            <h5 class="card-title">itProger</h5>
-                                            <p>itProger is online school teach of programming language, from <span class="italy-font">Ruby</span> to <span class="italy-font">Python</span> and <span class="italy-font">JS</span>, authors methods teaching, interesting tasks for practical skills. Have a colorful fresh design. Total &#43;&#45; 12 pages</p>
-                                            <p><a href="https://www.youtube.com/c/gosha_dudar">YouTube</a></p>
-                                            <ul class="prod_list">
-                                                <p>Production list:</p>
-                                                <li class="prod_list-item">itProger</li>
-                                                <li class="prod_list-item">itProger Studio</li>
-                                                <li class="prod_list-item">Front-end courses</li>
-                                            </ul>
-                                            <i class="fas fa-arrow-up"></i>
-                                        </div>
-                                        <div class="images">
-                                            <div class="scroll-el">
-                                                <img src="img/works/itprgr/screen_main.png" alt="">
-                                            </div>
-                                            <div class="scroll-el">
-                                                <img src="img/works/itprgr/screen_main.png" alt="">
-                                            </div>
-                                            <div class="scroll-el">
-                                                <img src="img/works/itprgr/screen_main.png" alt="">
-                                            </div>
-                                            <div class="scroll-el">
-                                                <img src="img/works/itprgr/screen_main.png" alt="">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="cases_item" data-tilt data-tilt-glare="true" data-tilt-perspective="1000">
-                            <img src="img/works/full/itprgr.png" alt="">
-                            <div class="tr-bl">
-                                <h4 class="cases_title">Itprgr</h4>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="about">
-            <div class="container">
-                <div class="about_description">
-                    <img src="img/avatar/3.jpg" class="about_avatar" alt="">
-                    <div class="flex-column">
-                        <p class="about_text">
-                            Hi,<br>
-                            i am Heorhii, markup developer and human
-                        </p>
-                        <div class="cv">
-                            <ul class="contact">
-                                <li>
-                                    e-mail:
-                                    <a href="mailto:h.hrdnk@gmail.com">h.hrdnk@gmail.com</a>
-                                </li>
-                                <li>
-                                    skype:
-                                    <a href="skype:zgorodenko?chat">zgorodenko</a>
-                                </li>
-                            </ul>
-                            <div id="burger-wrapper">
-                                <div id="burger-circle"></div>
-                                <button id="menu-burger">
-                                    <!--  this fucking shit, i know  -->
-                                    <a href="#">resume</a>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
         
-<!--    </div>-->
-    
-    <!-- END CONTENT PART -->
-    
-    <!-- THEME TOGGLE -->
-    
-        <div class="pin">
-            <i class="far fa-lightbulb"></i>
-        </div>
-    
-    <!-- END THEME TOGGLE -->
-    
-    <script src="js/themes.js"></script>
-    <script src="https://kit.fontawesome.com/a9de9cd4d7.js" crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-    <script src="js/TweenMax.min.js"></script>
-    <script src="js/magnetic_button.js"></script>
-    <script src="js/pin.js"></script>
-<!--    <script src="js/smooth_scroll.js"></script>-->
-    <script src="js/progress_scroll.js"></script>
-    <script src="js/tilt.jquery.min.js"></script>
-    <script src="js/cards.js"></script>
-<!--    <script src="js/cards.js"></script>-->
-    
+    <!-- links js -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="dist/js/uikit.min.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-122267176-2"></script>
+    <script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	
+	gtag('config', 'UA-122267176-2');
+    </script>
 </body>
 </html>

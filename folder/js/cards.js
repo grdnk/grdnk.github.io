@@ -33,25 +33,25 @@
 
 
 
-//$(document).ready(function(){
-//
-//	
-//    $('.cases_item').on('click', function(){		
-//        $(this).parent().find('.fsmenu').removeClass('close-menu'); //закрыть открытые, если надо  
-//        $(this).parent().find('.fsmenu').addClass('is-active'); //открыть текущий
-//        $('body').css('overflow', 'hidden');
-//    });
-//	
-//	$('.content__back').click(function(){
-//		
-//        $(this).parent().parent().parent().parent().find('.fsmenu').addClass('close-menu');
-//        $(this).parent().parent().parent().parent().find('.fsmenu').removeClass('is-active');
-//        $('body').css('overflow', '');
-//        
-//	});
-//    
-//				
-//});
+$(document).ready(function(){
+
+	
+    $('.cases_item').on('click', function(){		
+        $(this).parent().find('.fsmenu').removeClass('close-menu'); //закрыть открытые, если надо  
+        $(this).parent().find('.fsmenu').addClass('is-active'); //открыть текущий
+        $('body').css('overflow', 'hidden');
+    });
+	
+	$('.content__back').click(function(){
+		
+        $(this).parent().parent().parent().parent().find('.fsmenu').addClass('close-menu');
+        $(this).parent().parent().parent().parent().find('.fsmenu').removeClass('is-active');
+        $('body').css('overflow', '');
+        
+	});
+    
+				
+});
 
 
 
@@ -65,7 +65,7 @@ $('.cases_item').on('click', function(){
 
           if($(this).parent().find('.block-anim').hasClass('is-active')) {
             $(this).parent().find('.block-anim').animate({'width': '100%'}, 400, 'swing', function(){
-              $(this).parent().find('.block-anim').css({'left': 0, 'right': ''});
+              $(this).parent().find('.block-anim').css({'left': 0, 'right': '', 'overflow': 'auto'});
               $('body').css('overflow', 'hidden');
             });
           };
@@ -76,7 +76,7 @@ $('.cases_item').on('click', function(){
             anim.removeClass('is-active');
 
             anim.animate({'width': '0'}, 400, 'swing', function(){
-              anim.css({'right': 0, 'left': ''});
+              anim.css({'right': 0, 'left': '', 'overflow': ''});
               $('body').css('overflow', '');
             });
 

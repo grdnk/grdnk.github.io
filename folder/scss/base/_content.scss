@@ -192,7 +192,7 @@ section {
         justify-content: center;
         align-items: center;
         &:hover {
-            & .tr-bl { backdrop-filter: blur(0px); }
+//            & .tr-bl { backdrop-filter: blur(0px); }
             cursor: pointer;
         }
         .cases_title {
@@ -211,7 +211,7 @@ section {
             height: 100%;
             width: 100%;
             background: rgba(0,0,0,0.7);
-            backdrop-filter: blur(1px);
+//            backdrop-filter: blur(1px);
             z-index: 1;
         }
     }

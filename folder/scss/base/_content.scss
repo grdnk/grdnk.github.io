@@ -187,20 +187,14 @@ section {
         & + .card { margin-left: 100px; }
     }
     &_item {
-//        width: inherit;
-//        height: 300px;
         position: relative;
         display: flex;
         justify-content: center;
         align-items: center;
-        transform-style: preserve-3d;
-        transform: translateZ(-100px);
         &:hover {
             & .tr-bl { backdrop-filter: blur(0px); }
             cursor: pointer;
         }
-//  transform: perspective(300px);
-//        box-shadow: 5px 5px 30px 7px rgba(0,0,0,0.25), -5px -5px 30px 7px rgba(0,0,0,0.22);
         .cases_title {
             font-size: 2rem;
             font-weight: 900;
@@ -208,7 +202,6 @@ section {
             letter-spacing: 1px;
             margin: 0;
             z-index: 2;
-            transform: translateZ(50px);
         }
         .tr-bl {
             position: absolute;
@@ -220,17 +213,6 @@ section {
             background: rgba(0,0,0,0.7);
             backdrop-filter: blur(1px);
             z-index: 1;
-        }
-//        &:hover {
-//            &::before { backdrop-filter: blur(0px); }
-//        }
-//        & + .cases_item { margin-left: 100px; }
-        img {
-//            position: absolute;
-            display: block;
-//            object-fit: cover;
-//            filter: blur(1px);
-            z-index: 0;
         }
     }
 }
@@ -561,14 +543,13 @@ section {
 }
 
 .block-anim .fix-wrapper {
-  display: block;
-  width: 100vw;
-  height: 100vh;
-//  overflow-y: auto;
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
     overflow-x: hidden;
-  position: relative;
-  padding: 50px 0;
-  box-sizing: border-box;
+    padding: 50px 0;
 }
 
 .blahblah {

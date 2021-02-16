@@ -436,7 +436,10 @@ section {
 .block-anim {
   display: block;
   width: 0;
-  height: 100vh;
+  min-height: 100vh;
+  min-height: -moz-available;
+  min-height: -webkit-fill-available;
+  min-height: fill-available;
   background: black;
   color: #fff;
   overflow: hidden;
@@ -589,9 +592,12 @@ section {
 //        position: relative;
     }
     img {
-        width: inherit;
+        display: block;
+        object-fit: cover;
+        overflow: hidden;
         border-radius: 10px;
         max-width: 220px; //or 200px
+        height: auto;
 //          box-shadow: 0 0 0px 12px rgba(255, 255, 255, 0.1), 0 0 1px 1px rgba(255, 255, 255, 0.1);
     }
 //    .one,

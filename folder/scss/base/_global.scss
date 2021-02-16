@@ -35,12 +35,10 @@ img {
 }
 
 html {
-    height: 100%;
     line-height: 1.15;
     box-sizing: border-box;
 	-webkit-text-size-adjust: 100%;
 	-ms-text-size-adjust: none;
-//    overflow-x: hidden;
 }
 
 *, *::before, *::after {
@@ -50,6 +48,7 @@ html {
 body {
     padding: 0;
     margin: 0;
+    height: 100%;
     width: 100%; //
     background-color: var(--background-color);
     font: {
@@ -59,10 +58,9 @@ body {
     }
     font-size: 100%;
     color: var(--title-color);
-//    transition: background-color 1s, color 1s;
     overflow-anchor: auto;
     scroll-behavior: smooth;
-//    overflow: hidden;
+    overflow-x: hidden;
 }
 
 .container {

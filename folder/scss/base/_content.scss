@@ -443,7 +443,6 @@ section {
   position: fixed;
   top: 0;
   right: 0;
-  bottom: 0;
   z-index: 10;
     i {
         font-size: 20px;
@@ -546,7 +545,8 @@ section {
     display: block;
     width: 100vw;
     height: 100vh;
-    overflow-y: scroll;
+    pointer-events: auto;
+    overflow-y: auto;
     -webkit-overflow-scrolling: touch;
     overflow-x: hidden;
     padding: 50px 0;

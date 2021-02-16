@@ -68,6 +68,7 @@ $('.cases_item').on('click', function(){
               $(this).parent().find('.block-anim').css({'left': 0, 'right': '', 'overflow': 'auto'});
               $('body').css('overflow', 'hidden');
               $('body').css('pointer-events', 'none');
+              $('body').css('touch-action', 'none');
             });
           };
     
@@ -80,6 +81,7 @@ $('.cases_item').on('click', function(){
               anim.css({'right': 0, 'left': '', 'overflow': ''});
               $('body').css('overflow', '');
               $('body').css('pointer-events', 'auto');
+              $('body').css('touch-action', 'auto');
             });
 
         });

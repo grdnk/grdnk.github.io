@@ -65,7 +65,7 @@ $('.cases_item').on('click', function(){
 
           if($(this).parent().find('.block-anim').hasClass('is-active')) {
             $(this).parent().find('.block-anim').animate({'width': '100%'}, 400, 'swing', function(){
-              $(this).parent().find('.block-anim').css({'left': 0, 'right': '', 'overflow': 'auto'});
+              $(this).parent().find('.block-anim').css({'left': 0, 'right': ''});
               $('body').css('overflow', 'hidden');
               $('body').css('pointer-events', 'none');
               $('body').css('touch-action', 'none');
@@ -78,7 +78,7 @@ $('.cases_item').on('click', function(){
             anim.removeClass('is-active');
 
             anim.animate({'width': '0'}, 400, 'swing', function(){
-              anim.css({'right': 0, 'left': '', 'overflow': ''});
+              anim.css({'right': 0, 'left': ''});
               $('body').css('overflow', '');
               $('body').css('pointer-events', 'auto');
               $('body').css('touch-action', 'auto');

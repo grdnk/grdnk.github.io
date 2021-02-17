@@ -442,6 +442,7 @@ section {
   overflow: hidden;
   position: fixed;
   top: 0;
+  bottom: 0;
   right: 0;
   z-index: 10;
     i {
@@ -542,7 +543,7 @@ section {
 }
 
 .block-anim .fix-wrapper {
-    position: relative;
+//    position: relative;
     display: block;
     width: 100vw;
     height: 100vh;

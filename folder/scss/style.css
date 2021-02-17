@@ -204,7 +204,7 @@ section { margin: 120px 0; }
   100% { -webkit-transform: translate(-40%, -100%); transform: translate(-40%, -100%); } }
 @keyframes animScrollingContactTextLeft { 0% { -webkit-transform: translate(-20%, -100%); transform: translate(-20%, -100%); }
   100% { -webkit-transform: translate(-40%, -100%); transform: translate(-40%, -100%); } }
-.block-anim { display: block; width: 0; min-height: 100vh; pointer-events: auto; overflow-y: auto; -webkit-overflow-scrolling: touch; overflow-x: hidden; background: black; color: #fff; position: fixed; top: 0; bottom: 0; right: 0; z-index: 10; top: -70px; padding-bottom: 70px; -webkit-transform: translateY(70px); transform: translateY(70px); }
+.block-anim { display: block; width: 0; min-height: 100vh; pointer-events: auto; overflow-y: auto; -webkit-overflow-scrolling: touch; overflow-x: hidden; background: black; color: #fff; position: fixed; top: 0; bottom: 0; right: 0; z-index: 10; }
 .block-anim i { font-size: 20px; border: 1px solid #fff; width: 40px; height: 40px; border-radius: 100px; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
 .block-anim::after { content: ''; position: absolute; display: block; background: rgba(255, 255, 255, 0.1); left: 15%; top: 0; width: 1px; height: 100%; -webkit-transform: translateX(-50%); transform: translateX(-50%); }
 .block-anim::before { content: ''; position: absolute; display: block; background: rgba(255, 255, 255, 0.1); right: 15%; top: 0; width: 1px; height: 100%; -webkit-transform: translateX(-50%); transform: translateX(-50%); }

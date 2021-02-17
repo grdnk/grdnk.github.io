@@ -437,9 +437,6 @@ section {
   display: block;
   width: 0;
   min-height: 100vh;
-  min-height: -moz-available;
-  min-height: -webkit-fill-available;
-  min-height: fill-available;
   background: black;
   color: #fff;
   overflow: hidden;
@@ -545,7 +542,7 @@ section {
 }
 
 .block-anim .fix-wrapper {
-    position: absolute;
+    position: relative;
     display: block;
     width: 100vw;
     height: 100vh;

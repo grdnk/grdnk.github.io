@@ -172,7 +172,9 @@ section { margin: 120px 0; }
 
 .fsmenu.close-menu .fsmenu--container { width: 100vw; left: 0; -webkit-animation: animMenuClose 0.6s cubic-bezier(0.13, 0.13, 0.02, 1.07) 0.3s forwards; animation: animMenuClose 0.6s cubic-bezier(0.13, 0.13, 0.02, 1.07) 0.3s forwards; }
 
-.content__back { background: url("../img/arrow_left.svg") no-repeat 50% 50%; margin: 0; border: 0; width: 32px; height: 22px; margin-bottom: 60px; }
+.content__back { background: url("data:image/svg+xml,%3Csvg version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='32px' height='22px' viewBox='0 0 32 22' %3E %3Cpath d='M1.301 10.658L11.615.344 14.39 3.12 8.616 8.893H30.73v3.923H8.617l5.773 5.774-2.775 2.774L1.301 11.05a.28.28 0 0 1 0-.392z' stroke='%23ffffff' stroke-width='1px' fill='none'/%3E %3C/svg%3E") no-repeat 50% 50%; margin: 0; border: 0; width: 32px; height: 22px; margin-bottom: 60px; }
+
+.content__back:focus, .content__back:hover { outline: none; background: url("data:image/svg+xml,%3Csvg version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='32px' height='22px' viewBox='0 0 32 22' %3E %3Cpath d='M1.301 10.658L11.615.344 14.39 3.12 8.616 8.893H30.73v3.923H8.617l5.773 5.774-2.775 2.774L1.301 11.05a.28.28 0 0 1 0-.392z' stroke='%23ffffff' stroke-width='1px' fill='%23ffffff'/%3E %3C/svg%3E") no-repeat 50% 50%; }
 
 @-webkit-keyframes hideDisplay { 100% { width: 0; } }
 @keyframes hideDisplay { 100% { width: 0; } }
@@ -204,7 +206,7 @@ section { margin: 120px 0; }
   100% { -webkit-transform: translate(-40%, -100%); transform: translate(-40%, -100%); } }
 @keyframes animScrollingContactTextLeft { 0% { -webkit-transform: translate(-20%, -100%); transform: translate(-20%, -100%); }
   100% { -webkit-transform: translate(-40%, -100%); transform: translate(-40%, -100%); } }
-.block-anim { display: block; width: 0; min-height: 100vh; pointer-events: auto; overflow-y: auto; -webkit-overflow-scrolling: touch; overflow-x: hidden; background: black; color: #fff; position: fixed; top: 0; bottom: 0; right: 0; z-index: 10; }
+.block-anim { display: block; width: 0; min-height: 100vh; pointer-events: auto; overflow-y: auto; -webkit-overflow-scrolling: touch; overflow-x: hidden; background: red; color: #fff; position: fixed; top: 0; bottom: 0; right: 0; z-index: 10; -webkit-backface-visibility: hidden; backface-visibility: hidden; }
 .block-anim i { font-size: 20px; border: 1px solid #fff; width: 40px; height: 40px; border-radius: 100px; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
 .block-anim::after { content: ''; position: absolute; display: block; background: rgba(255, 255, 255, 0.1); left: 15%; top: 0; width: 1px; height: 100%; -webkit-transform: translateX(-50%); transform: translateX(-50%); }
 .block-anim::before { content: ''; position: absolute; display: block; background: rgba(255, 255, 255, 0.1); right: 15%; top: 0; width: 1px; height: 100%; -webkit-transform: translateX(-50%); transform: translateX(-50%); }
@@ -218,7 +220,7 @@ section { margin: 120px 0; }
 .block-anim a:hover::after { left: 0; width: 100%; height: 100%; }
 .block-anim .italy-font { font-style: italic; }
 
-.block-anim .fix-wrapper { display: block; width: 100vw; margin: 50px 0; }
+.block-anim .fix-wrapper { position: relative; display: block; width: 100vw; height: inherit; background: #000; overflow: hidden; }
 
 .blahblah { display: -webkit-box; display: -ms-flexbox; display: flex; overflow: hidden; }
 
@@ -233,7 +235,7 @@ section { margin: 120px 0; }
   .blahblah { -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; }
   .description, .images { width: 100%; }
   .description { margin-bottom: 30px; }
-  .images { -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
+  .images .scroll-el { -webkit-box-align: start; -ms-flex-align: start; align-items: flex-start; }
   .images .scroll-el::after { font-size: 2rem; margin-left: 20px; }
   .about_description { -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; }
   .about_avatar { max-width: 220px; border: 5px solid violet; }

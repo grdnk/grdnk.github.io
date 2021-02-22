@@ -216,7 +216,7 @@ section { padding: 50px 0; }
   100% { -webkit-transform: translate(-40%, -100%); transform: translate(-40%, -100%); } }
 @keyframes animScrollingContactTextLeft { 0% { -webkit-transform: translate(-20%, -100%); transform: translate(-20%, -100%); }
   100% { -webkit-transform: translate(-40%, -100%); transform: translate(-40%, -100%); } }
-.block-anim { display: block; width: 0; min-height: 100vh; pointer-events: auto; overflow-y: auto; -webkit-overflow-scrolling: touch; overflow-x: hidden; background: red; color: #fff; position: fixed; top: 0; bottom: 0; right: 0; z-index: 10; -webkit-backface-visibility: hidden; backface-visibility: hidden; }
+.block-anim { display: block; width: 0; min-height: 100vh; pointer-events: auto; overflow-y: auto; -webkit-overflow-scrolling: touch; overflow-x: hidden; background: red; color: #fff; position: fixed; top: 0; bottom: 0; right: 0; z-index: 10; -webkit-backface-visibility: hidden; backface-visibility: hidden; transform: translate3d(0,0,0); }
 .block-anim i { font-size: 20px; border: 1px solid #fff; width: 40px; height: 40px; border-radius: 100px; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
 .block-anim .card-title { font-family: 'tenez', sans-serif; font-weight: 700; font-size: 50px; margin: 0; }
 .block-anim .card-title::after { content: ''; display: block; margin-top: 1.5rem; margin-bottom: 40px; width: 3rem; border-bottom: 1px solid #fff; }

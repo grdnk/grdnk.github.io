@@ -54,6 +54,31 @@
 //});
 
 
+$(function() {
+  $('.btn').click(function() {
+    var modal = $(this).data('modal');
+//    $('.fade').fadeIn(500);
+    $('#' + modal).addClass('active');
+    $('body').css('overflow', 'hidden');
+  });
+
+  $('.close').click(function() {
+//    $('.fade').fadeOut(500);
+    $('.modal').removeClass('active');
+    $('body').css('overflow', '');
+  });
+
+  $(document).keydown(function(e) {
+    if (e.keyCode === 27) {
+      e.stopPropagation();
+//      $('.fade').fadeOut(500);
+      $('.modal').removeClass('active');
+      $('body').css('overflow', '');
+    }
+  });
+});
+
+
 
 let anim = $('.cases_item').parent().find('.block-anim');
 
@@ -67,6 +92,8 @@ $('.cases_item').on('click', function(){
             $(this).parent().find('.block-anim').animate({'width': '100%'}, 400, 'swing', function(){
               $(this).parent().find('.block-anim').css({'left': 0, 'right': ''});
               $('body').css('overflow', 'hidden');
+              $('body').css('pointer-events', 'none');
+              $('body').css('touch-action', 'none');
             });
           };
     
@@ -78,6 +105,8 @@ $('.cases_item').on('click', function(){
             anim.animate({'width': '0'}, 400, 'swing', function(){
               anim.css({'right': 0, 'left': ''});
               $('body').css('overflow', '');
+              $('body').css('pointer-events', 'auto');
+              $('body').css('touch-action', 'auto');
             });
 
         });

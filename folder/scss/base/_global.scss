@@ -9,7 +9,7 @@
   --title-color: #161616;
   --rgba-title-color: rgba(51, 51, 51, 0.1);
   --body-color: #696969;
-  --background-color: #b892ff;
+  --background-color: #f8e2a9;
   --foreground-color: #fff;
   --blend-mode: normal;
 }
@@ -49,7 +49,7 @@ body {
     padding: 0;
     margin: 0;
     height: 100%;
-    width: 100%; //
+    width: 100%;
     background-color: var(--background-color);
     font: {
         family: 'Montserrat', 'Arial', 'Helvetica', sans-serif;

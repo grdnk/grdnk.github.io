@@ -43,27 +43,28 @@
     width:100%;
     height:100vh;
     top: 0;
-    background: url('../img/wavy-bg.svg'), linear-gradient(to right, #111, #111);
-    background-size: auto;
-    background-repeat: no-repeat;
+    background: #111;
+//    background: url('../img/wavy-bg.svg'), linear-gradient(to right, #111, #111);
+//    background-size: auto;
+//    background-repeat: repeat;
     overflow:hidden;
     position:fixed;
     transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
     z-index: 100;
 }
 
-.p {
-    position: absolute;
-    font-weight: 900;
-    font-style: italic;
-    font-size: 1.2rem;
-    letter-spacing: 2px;
-    margin-bottom: 20px;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: #fff;
-}
+//.p {
+//    position: absolute;
+//    font-weight: 900;
+//    font-style: italic;
+//    font-size: 1.2rem;
+//    letter-spacing: 2px;
+//    margin-bottom: 20px;
+//    top: 40%;
+//    left: 50%;
+//    transform: translate(-50%, -50%);
+//    color: #fff;
+//}
 
 //end preloader styles
 
@@ -74,12 +75,12 @@
 //}
 
 .smooth-scroll-wrapper {
-//    position: relative;
-//    z-index: 2;
-//    top: 0;
-//    left: 0;
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    left: 0;
 //    text-align: center;
-//    overflow: hidden;
+    overflow: hidden;
 }
 
 //section {
@@ -125,11 +126,9 @@ h1.num {
     text-transform: capitalize;
 }
 
-//.subtitle {
-//    font-weight: 500;
-//}
 
 ul.works_list {
+    flex-basis: 100%;
     padding: 0;
     list-style: none;
     li {
@@ -155,7 +154,7 @@ ul.works_list {
 }
 
 section {
-    padding: 120px 0;
+    padding: 50px 0;
 }
 
 .about {
@@ -362,6 +361,7 @@ section {
 
 .content__back:focus,
 .content__back:hover {
+    cursor: pointer;
 	outline: none;
 	background: url("data:image/svg+xml,%3Csvg version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='32px' height='22px' viewBox='0 0 32 22' %3E %3Cpath d='M1.301 10.658L11.615.344 14.39 3.12 8.616 8.893H30.73v3.923H8.617l5.773 5.774-2.775 2.774L1.301 11.05a.28.28 0 0 1 0-.392z' stroke='%23ffffff' stroke-width='1px' fill='%23ffffff'/%3E %3C/svg%3E") no-repeat 50% 50%;
 }
@@ -509,7 +509,8 @@ section {
 .block-anim {
     display: block;
     width: 0;
-    min-height: calc(100vh + 50px);
+    min-height: 100vh;
+//    padding: 50px 0;
     pointer-events: auto;
     overflow-y: auto;
     -webkit-overflow-scrolling: touch;
@@ -531,38 +532,6 @@ section {
         display: flex;
         justify-content: center;
         align-items: center;
-    }
-    &::after {
-        content: '';
-        position: absolute;
-        display: block;
-        background: rgba(255, 255, 255, .1);
-        left: 15%;
-        top: 0;
-        width: 1px;
-        height: 100%;
-        transform: translateX(-50%);
-    }
-    &::before {
-        content: '';
-        position: absolute;
-        display: block;
-        background: rgba(255, 255, 255, .1);
-        right: 15%;
-        top: 0;
-        width: 1px;
-        height: 100%;
-        transform: translateX(-50%);
-    }
-    .decor-line {
-        position: absolute;
-        display: block;
-        background: rgba(255, 255, 255, .1);
-        left: 50%;
-        top: 0;
-        width: 1px;
-        height: 100%;
-        transform: translateX(-50%);
     }
     .card-title {
         font-family: 'tenez', sans-serif;
@@ -624,12 +593,44 @@ section {
     display: block;
     width: 100vw;
 //    height: inherit;
-    padding: 50px 0;
     background: #000;
+    padding: 50px 0px;
 //    background: url('../img/wavy-bg.svg'), linear-gradient(to right, #111, #111);
     background-size: cover;
     background-repeat: no-repeat;
     overflow: hidden;
+    &::after {
+        content: '';
+        position: absolute;
+        display: block;
+        background: rgba(255, 255, 255, .1);
+        left: 15%;
+        top: 0;
+        width: 1px;
+        height: 100%;
+        transform: translateX(-50%);
+    }
+    &::before {
+        content: '';
+        position: absolute;
+        display: block;
+        background: rgba(255, 255, 255, .1);
+        right: 15%;
+        top: 0;
+        width: 1px;
+        height: 100%;
+        transform: translateX(-50%);
+    }
+    .decor-line {
+        position: absolute;
+        display: block;
+        background: rgba(255, 255, 255, .1);
+        left: 50%;
+        top: 0;
+        width: 1px;
+        height: 100%;
+        transform: translateX(-50%);
+    }
 }
 
 .blahblah {

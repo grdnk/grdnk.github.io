@@ -120,6 +120,16 @@ body { padding: 0; margin: 0; height: 100%; width: 100%; background-color: var(-
 @media (min-width: 768px) { .container { width: 750px; } }
 @media (min-width: 992px) { .container { width: 970px; } }
 @media (min-width: 1200px) { .container { width: 1170px; } }
+.pace { pointer-events: none; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; z-index: 2000; position: fixed; margin: auto; top: 0; left: 0; right: 0; bottom: 0; width: 400px; border: 0px; height: 1px; overflow: hidden; background: #1b1b1b; }
+
+.pace .pace-progress { -webkit-box-sizing: border-box; box-sizing: border-box; -webkit-transform: translate3d(0, 0, 0); transform: translate3d(0, 0, 0); max-width: 400px; position: fixed; z-index: 2000; display: block; position: absolute; top: 0; right: 100%; height: 100%; width: 100%; background: #fff; }
+
+.pace.pace-inactive { display: none; }
+
+#preloader { width: 100%; height: 100vh; top: 0; left: 0; right: 0; bottom: 0; background: url("../img/wavy-bg.svg"), -webkit-gradient(linear, left top, right top, from(#111), to(#111)); background: url("../img/wavy-bg.svg"), linear-gradient(to right, #111, #111); background-size: auto; background-repeat: no-repeat; overflow: hidden; position: fixed; -webkit-transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1); transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1); z-index: 100; }
+
+.p { position: absolute; font-weight: 900; font-style: italic; font-size: 1.5rem; letter-spacing: 2px; top: 40%; left: 50%; -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%); color: #fff; }
+
 h1.num { position: absolute; font-size: 16px; font-weight: 700; color: var(--title-color) !important; margin: 20px; }
 
 .percent { position: fixed; display: -webkit-box; display: -ms-flexbox; display: flex; top: 50%; -webkit-transform: translateY(-50%); transform: translateY(-50%); right: 100px; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; background: var(--rgba-title-color); height: 140px; width: 2px; z-index: 3; }
@@ -206,7 +216,7 @@ section { margin: 120px 0; }
   100% { -webkit-transform: translate(-40%, -100%); transform: translate(-40%, -100%); } }
 @keyframes animScrollingContactTextLeft { 0% { -webkit-transform: translate(-20%, -100%); transform: translate(-20%, -100%); }
   100% { -webkit-transform: translate(-40%, -100%); transform: translate(-40%, -100%); } }
-.block-anim { display: block; width: 0; min-height: 100vh; pointer-events: auto; overflow-y: auto; -webkit-overflow-scrolling: touch; overflow-x: hidden; background: red; color: #fff; position: fixed; top: 0; bottom: 0; right: 0; z-index: 10; -webkit-backface-visibility: hidden; backface-visibility: hidden; padding: 50px 0; }
+.block-anim { display: block; width: 0; min-height: 100vh; pointer-events: auto; overflow-y: auto; -webkit-overflow-scrolling: touch; overflow-x: hidden; background: red; color: #fff; position: fixed; top: 0; bottom: 0; right: 0; z-index: 10; -webkit-backface-visibility: hidden; backface-visibility: hidden; }
 .block-anim i { font-size: 20px; border: 1px solid #fff; width: 40px; height: 40px; border-radius: 100px; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
 .block-anim::after { content: ''; position: absolute; display: block; background: rgba(255, 255, 255, 0.1); left: 15%; top: 0; width: 1px; height: 100%; -webkit-transform: translateX(-50%); transform: translateX(-50%); }
 .block-anim::before { content: ''; position: absolute; display: block; background: rgba(255, 255, 255, 0.1); right: 15%; top: 0; width: 1px; height: 100%; -webkit-transform: translateX(-50%); transform: translateX(-50%); }
@@ -220,7 +230,7 @@ section { margin: 120px 0; }
 .block-anim a:hover::after { left: 0; width: 100%; height: 100%; }
 .block-anim .italy-font { font-style: italic; }
 
-.block-anim .fix-wrapper { position: relative; display: block; width: 100vw; height: inherit; background: #000; overflow: hidden; }
+.block-anim .fix-wrapper { position: relative; display: block; width: 100vw; height: inherit; padding: 50px 0; background: #000; background-size: cover; background-repeat: no-repeat; overflow: hidden; }
 
 .blahblah { display: -webkit-box; display: -ms-flexbox; display: flex; overflow: hidden; }
 

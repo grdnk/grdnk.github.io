@@ -1,5 +1,75 @@
 //CONTENT PART
 
+
+//preloader styles
+
+.pace {
+  pointer-events: none;
+  user-select: none;
+  z-index: 2000;
+  position: fixed;
+  margin: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 400px;
+  border: 0px;
+  height: 1px;
+  overflow: hidden;
+  background:#1b1b1b;
+}
+
+.pace .pace-progress {
+  box-sizing: border-box;
+  transform: translate3d(0, 0, 0);
+  max-width: 400px;
+  position: fixed;
+  z-index: 2000;
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 100%;
+  height: 100%;
+  width: 100%;
+  background: #fff;
+}
+
+.pace.pace-inactive {
+  display: none;
+}
+
+#preloader{
+    width:100%;
+    height:100vh;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('../img/wavy-bg.svg'), linear-gradient(to right, #111, #111);
+    background-size: auto;
+    background-repeat: no-repeat;
+    overflow:hidden;
+    position:fixed;
+    transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+    z-index: 100;
+}
+
+.p {
+    position: absolute;
+    font-weight: 900;
+    font-style: italic;
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+}
+
+//end preloader styles
+
+
 //.row {
 //    display: flex;
 //    .col { flex: 1 }
@@ -439,20 +509,20 @@ section {
 
 
 .block-anim {
-  display: block;
-  width: 0;
-  min-height: 100vh;
+    display: block;
+    width: 0;
+    min-height: 100vh;
     pointer-events: auto;
     overflow-y: auto;
     -webkit-overflow-scrolling: touch;
     overflow-x: hidden;
-  background: red;
-  color: #fff;
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  z-index: 10;
+    background: red;
+    color: #fff;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 10;
     backface-visibility: hidden;
     i {
         font-size: 20px;
@@ -556,8 +626,11 @@ section {
     display: block;
     width: 100vw;
     height: inherit;
-//    padding: 50px 0;
+    padding: 50px 0;
     background: #000;
+//    background: url('../img/wavy-bg.svg'), linear-gradient(to right, #111, #111);
+    background-size: cover;
+    background-repeat: no-repeat;
     overflow: hidden;
 }
 

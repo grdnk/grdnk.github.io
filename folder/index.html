@@ -25,6 +25,7 @@
     <!-- END PROGRESS BAR -->
     
     
+<!--
     <div class="sticky-card modal" id="modal_1">
         <div class="fix-wrapper">
             <div class="container">
@@ -60,6 +61,7 @@
             </div>
         </div>
     </div>
+-->
     
     
     
@@ -126,6 +128,7 @@
                                         </div>
                                     </div>
                                 </div>
+<!--
                                 <div class="next">
                                     <a href="#"></a>
                                     <p class="next_link">Next case study
@@ -133,6 +136,7 @@
                                     </p>
                                     <h2 class="next_name">Pharm13</h2>
                                 </div>
+-->
                             </div>
                         </div>
                         <div class="cases_item">
@@ -189,6 +193,7 @@
                         <p class="about_text">
                             Hi,<br>
                             i am Heorhii, markup developer and human
+                            <img class="about_hover" src="https://media.giphy.com/media/xYHscQ1Np55i8/giphy.gif" alt="">
                         </p>
                         <div class="cv">
                             <ul class="contact">
@@ -213,7 +218,7 @@
                 </div>
             </div>
         </section>
-        <button type="button" class="btn" data-modal="modal_1">open shit</button>
+<!--        <button type="button" class="btn" data-modal="modal_1">open shit</button>-->
 <!--    </div>-->
     
     <!-- END CONTENT PART -->
@@ -245,5 +250,14 @@
         tl.from(".subtitle, .works_list", { duration: 0.7, y: 20, opacity: 0, ease: "expo.inOut", stagger: 0.1 }, "-=0.7");
 
   </script>
+  <script>
+// Show & hide the images
+$(".about_text").hover(function(){
+  $(this).parent().find(".about_hover").addClass("is-active");
+  }, function() {
+  $(this).parent().find(".about_hover").removeClass("is-active");
+  });
+
+    </script>
 </body>
 </html>

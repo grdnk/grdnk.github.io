@@ -113,7 +113,7 @@ html { line-height: 1.15; -webkit-box-sizing: border-box; box-sizing: border-box
 
 *, *::before, *::after { -webkit-box-sizing: inherit; box-sizing: inherit; }
 
-body { padding: 0; margin: 0; height: 100%; width: 100%; background: var(--background-color); font-family: 'Montserrat', 'Arial', 'Helvetica', sans-serif; font-weight: normal; font-style: normal; font-size: 100%; color: var(--title-color); overflow-anchor: auto; scroll-behavior: smooth; -webkit-box-sizing: border-box; box-sizing: border-box; -webkit-transition: color 0.5s, background 0.5s; transition: color 0.5s, background 0.5s; }
+body { padding: 0; margin: 0; height: 100%; width: 100%; background: var(--background-color); font-family: 'Montserrat', 'Arial', 'Helvetica', sans-serif; font-weight: normal; font-style: normal; font-size: 100%; color: var(--title-color); overflow-anchor: auto; scroll-behavior: smooth; -webkit-overflow-scrolling: touch; overflow: auto; -webkit-box-sizing: border-box; box-sizing: border-box; -webkit-transition: color 0.5s, background 0.5s; transition: color 0.5s, background 0.5s; }
 
 .container { max-width: 1120px; padding-left: 20px; padding-right: 20px; margin-left: auto; margin-right: auto; }
 
@@ -146,6 +146,8 @@ ul.works_list li a:hover { letter-spacing: 2px; -webkit-text-fill-color: var(--t
 
 section { padding: 50px 0; }
 
+.about_hover { width: 400px; position: absolute; opacity: .7; right: 20%; top: -70px; -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%); visibility: hidden; display: block; -webkit-transform: scale(0); transform: scale(0); -webkit-transition: all 0.15s cubic-bezier(0.05, 0.03, 0.35, 1); transition: all 0.15s cubic-bezier(0.05, 0.03, 0.35, 1); }
+.about_hover.is-active { visibility: visible !important; -webkit-transform: scale(1); transform: scale(1); }
 .about_description { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
 .about_avatar { opacity: .2; max-width: 320px; border-radius: 500px; border: 9px solid violet; }
 .about_text { position: relative; left: -80px; font-size: 3rem; font-weight: 900; font-style: italic; line-height: 1.5; letter-spacing: 1px; -webkit-text-fill-color: var(--title-color); }

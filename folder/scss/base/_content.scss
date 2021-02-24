@@ -157,6 +157,22 @@ section {
 }
 
 .about {
+    &_hover {
+          width: 400px;
+          position: absolute;
+          opacity: .7;
+        right: 20%;
+        top: -70px;
+        transform: translate(-50%, -50%);
+          visibility: hidden;
+          display: block;
+          transform: scale(0);
+          transition: all .15s cubic-bezier(.05,.03,.35,1);
+          &.is-active {
+              visibility: visible!important;
+              transform: scale(1);
+            }
+    }
     &_description {
         display: flex;
         justify-content: center;
@@ -597,6 +613,23 @@ section {
 //        }
     }
 }
+
+//.block-anim.is-active {
+//    .reveal {
+//        height: 100vh;
+//        width: 100vw;
+//        top: 0;
+//        left: 0;
+//        background: #fff;
+//        overflow: hidden;
+//        position: absolute;
+//        transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+//        z-index: 100;
+//        animation: 1s animMenuClose forwards ease;
+//        animation-delay: 500ms;
+//        animation-duration: 600ms;
+//    }
+//}
 
 .block-anim .fix-wrapper {
     position: relative;

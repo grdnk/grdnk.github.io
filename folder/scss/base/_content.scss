@@ -74,12 +74,12 @@
 //}
 
 .smooth-scroll-wrapper {
-    position: fixed;
-    z-index: 2;
-    top: 0;
-    left: 0;
+//    position: fixed;
+//    z-index: 2;
+//    top: 0;
+//    left: 0;
 //    text-align: center;
-    overflow: hidden;
+//    overflow: hidden;
 }
 
 //section {
@@ -127,7 +127,6 @@ h1.num {
 
 
 ul.works_list {
-    flex-basis: 100%;
     padding: 0;
     list-style: none;
     li {
@@ -315,8 +314,8 @@ section {
 	transition: transform 100ms linear;
 //    border: 1px solid rgb(128, 23, 90);
 //    box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
-    color: $yellow;
-    font-size: 18px;
+//    color: $yellow;
+//    font-size: 18px;
     z-index: 3;
     &:hover { cursor: pointer }
 }
@@ -382,11 +381,6 @@ section {
 	background: url("data:image/svg+xml,%3Csvg version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='32px' height='22px' viewBox='0 0 32 22' %3E %3Cpath d='M1.301 10.658L11.615.344 14.39 3.12 8.616 8.893H30.73v3.923H8.617l5.773 5.774-2.775 2.774L1.301 11.05a.28.28 0 0 1 0-.392z' stroke='%23ffffff' stroke-width='1px' fill='%23ffffff'/%3E %3C/svg%3E") no-repeat 50% 50%;
 }
 
-//.content__back:focus,
-//.content__back:hover {
-//	outline: none;
-//	background: url("data:image/svg+xml,%3Csvg version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='32px' height='22px' viewBox='0 0 32 22' %3E %3Cpath d='M1.301 10.658L11.615.344 14.39 3.12 8.616 8.893H30.73v3.923H8.617l5.773 5.774-2.775 2.774L1.301 11.05a.28.28 0 0 1 0-.392z' stroke='%23000000' stroke-width='1px' fill='%23000000'/%3E %3C/svg%3E") no-repeat 50% 50%;
-//}
 
 @-webkit-keyframes hideDisplay {
   100% {
@@ -599,6 +593,7 @@ section {
         background: #101010;
         margin-top: 5rem;
         padding: 2rem 0;
+        z-index: 1;
         &_link {
             font-size: 1rem;
             color: $yellow;
@@ -635,12 +630,9 @@ section {
     position: relative;
     display: block;
     width: 100vw;
-//    height: inherit;
+    min-height: inherit;
     background: #000;
-    padding: 50px 0px;
-//    background: url('../img/wavy-bg.svg'), linear-gradient(to right, #111, #111);
-    background-size: cover;
-    background-repeat: no-repeat;
+    padding-top: 50px;
     overflow: hidden;
     &::after {
         content: '';
@@ -664,7 +656,7 @@ section {
         height: 100%;
         transform: translateX(-50%);
     }
-    .decor-line {
+    & .decor-line {
         position: absolute;
         display: block;
         background: rgba(255, 255, 255, .1);

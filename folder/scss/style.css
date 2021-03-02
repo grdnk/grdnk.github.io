@@ -105,6 +105,10 @@ template { display: none; }
 
 .dark-theme { --title-color: #D3D3D3; --rgba-title-color: rgba(211, 211, 211, 0.1); --body-color: #afafaf; --background-color: #181621; --foreground-color: #211f2a; --blend-mode: lighten; }
 
+::-moz-selection { background: rgba(255, 171, 27, 0.4); }
+
+::selection { background: rgba(255, 171, 27, 0.4); }
+
 input, textarea, button, select, label, a { -webkit-tap-highlight-color: transparent; }
 
 a { text-decoration: none; color: inherit; }

@@ -24,6 +24,10 @@ $yellow: #ffab1b;
   --blend-mode: lighten;
 }
 
+::selection {
+    background: rgba(255, 171, 27, .4);
+}
+
 input,
 textarea,
 button,

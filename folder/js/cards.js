@@ -94,7 +94,6 @@ $('.cases_item').on('click', function(){
               $('body').css('overflow', 'hidden');
               $('body').css('-webkit-overflow-scrolling', 'touch');
               $('body').css('pointer-events', 'none');
- $('body').css('position', 'fixed');
             });
           };
     
@@ -108,7 +107,6 @@ $('.cases_item').on('click', function(){
               $('body').css('overflow', '');
               $('body').css('-webkit-overflow-scrolling', '');
               $('body').css('pointer-events', 'auto');
-$('body').css('position', '');
             });
 
         });

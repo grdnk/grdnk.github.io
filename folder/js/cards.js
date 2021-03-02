@@ -91,7 +91,7 @@ $('.cases_item').on('click', function(){
           if($(this).parent().find('.block-anim').hasClass('is-active')) {
             $(this).parent().find('.block-anim').animate({'width': '100%'}, 400, 'swing', function(){
               $(this).parent().find('.block-anim').css({'left': 0, 'right': ''});
-              $('body').css('overflow', 'hidden');
+              $('html, body').css('overflow', 'hidden');
               $('body').css('-webkit-overflow-scrolling', 'touch');
               $('body').css('pointer-events', 'none');
             });
@@ -104,7 +104,7 @@ $('.cases_item').on('click', function(){
 
             anim.animate({'width': '0'}, 400, 'swing', function(){
               anim.css({'right': 0, 'left': ''});
-              $('body').css('overflow', '');
+              $('html, body').css('overflow', '');
               $('body').css('-webkit-overflow-scrolling', '');
               $('body').css('pointer-events', 'auto');
             });

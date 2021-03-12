@@ -236,7 +236,7 @@ section { padding: 50px 0; }
 .block-anim .next_link img { display: inline-block; vertical-align: middle; margin-left: 6px; }
 .block-anim .next_name { margin-bottom: 0; margin-top: 15px; letter-spacing: 1px; }
 
-.block-anim .fix-wrapper { position: relative; display: block; width: 100vw; height: 100vh; background: #000; padding-top: 50px; overflow-y: scroll; }
+.block-anim .fix-wrapper { position: absolute; display: block; width: 100vw; min-height: 100vh; background: #000; padding-top: 50px; overflow-y: scroll; }
 .block-anim .fix-wrapper::after { content: ''; position: absolute; display: block; background: rgba(255, 255, 255, 0.1); left: 15%; top: 0; width: 1px; height: 100%; -webkit-transform: translateX(-50%); transform: translateX(-50%); }
 .block-anim .fix-wrapper::before { content: ''; position: absolute; display: block; background: rgba(255, 255, 255, 0.1); right: 15%; top: 0; width: 1px; height: 100%; -webkit-transform: translateX(-50%); transform: translateX(-50%); }
 .block-anim .fix-wrapper .decor-line { position: absolute; display: block; background: rgba(255, 255, 255, 0.1); left: 50%; top: 0; width: 1px; height: 100%; -webkit-transform: translateX(-50%); transform: translateX(-50%); }

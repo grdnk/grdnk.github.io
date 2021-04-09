@@ -33,25 +33,30 @@
 
 
 
-//$(document).ready(function(){
-//
-//	
-//    $('.cases_item').on('click', function(){		
-//        $(this).parent().find('.fsmenu').removeClass('close-menu'); //закрыть открытые, если надо  
-//        $(this).parent().find('.fsmenu').addClass('is-active'); //открыть текущий
-//        $('body').css('overflow', 'hidden');
-//    });
-//	
-//	$('.content__back').click(function(){
-//		
-//        $(this).parent().parent().parent().parent().find('.fsmenu').addClass('close-menu');
-//        $(this).parent().parent().parent().parent().find('.fsmenu').removeClass('is-active');
-//        $('body').css('overflow', '');
-//        
-//	});
-//    
-//				
-//});
+$(document).ready(function(){
+
+	
+    $('.cases_item').on('click', function(){		
+        $(this).parent().find('.fsmenu').removeClass('close-menu');
+        $(this).parent().find('.fsmenu').addClass('is-active');
+        $('body').css('overflow', 'hidden');
+        document.ontouchmove = function (e) {
+            e.preventDefault();
+        };
+    });
+	
+	$('.content__back').click(function(){
+		
+        $(this).parent().parent().parent().parent().find('.fsmenu').addClass('close-menu');
+        $(this).parent().parent().parent().parent().find('.fsmenu').removeClass('is-active');
+        $('body').css('overflow', '');
+        document.ontouchmove = function (e) {
+            return true;
+        };
+	});
+    
+				
+});
 
 
 //$(function() {
@@ -80,39 +85,39 @@
 
 
 
-let anim = $('.cases_item').parent().find('.block-anim');
-
-$('.cases_item').on('click', function(){
-    
-          var $this = $( this );
-    
-          $(this).parent().find('.block-anim').addClass('is-active');
-
-          if($(this).parent().find('.block-anim').hasClass('is-active')) {
-            $(this).parent().find('.block-anim').animate({'width': '100%'}, 400, 'swing', function(){
-              $(this).parent().find('.block-anim').css({'left': 0, 'right': ''});
-              $('html, body').css('overflow', 'hidden');
-              $('body').css('-webkit-overflow-scrolling', 'touch');
-              $('body').css('pointer-events', 'none');
-            });
-          };
-    
-    
-        $('.content__back').click(function(){
-            
-            anim.removeClass('is-active');
-
-            anim.animate({'width': '0'}, 400, 'swing', function(){
-              anim.css({'right': 0, 'left': ''});
-              $('html, body').css('overflow', '');
-              $('body').css('-webkit-overflow-scrolling', '');
-              $('body').css('pointer-events', 'auto');
-            });
-
-        });
-    
-    
-});
+//let anim = $('.cases_item').parent().find('.block-anim');
+//
+//$('.cases_item').on('click', function(){
+//    
+//          var $this = $( this );
+//    
+//          $(this).parent().find('.block-anim').addClass('is-active');
+//
+//          if($(this).parent().find('.block-anim').hasClass('is-active')) {
+//            $(this).parent().find('.block-anim').animate({'width': '100%'}, 400, 'swing', function(){
+//              $(this).parent().find('.block-anim').css({'left': 0, 'right': ''});
+//              $('body').css('overflow', 'hidden');
+//              $('body').css('-webkit-overflow-scrolling', 'touch');
+//              $('body').css('pointer-events', 'none');
+//            });
+//          };
+//    
+//    
+//        $('.content__back').click(function(){
+//            
+//            anim.removeClass('is-active');
+//
+//            anim.animate({'width': '0'}, 400, 'swing', function(){
+//              anim.css({'right': 0, 'left': ''});
+//              $('body').css('overflow', '');
+//              $('body').css('-webkit-overflow-scrolling', '');
+//              $('body').css('pointer-events', 'auto');
+//            });
+//
+//        });
+//    
+//    
+//});
 
 
 

@@ -147,7 +147,7 @@ section { padding: 50px 0; }
 
 .title { font-weight: 900; font-style: italic; text-transform: capitalize; }
 
-.works_list-item img.is-hover, .about_text picture.is-hover { visibility: visible; -webkit-transform: scale(1); transform: scale(1); }
+.about_text picture.is-hover { visibility: visible; -webkit-transform: scale(1); transform: scale(1); }
 
 figure { padding: 0; margin: 0; }
 
@@ -160,8 +160,6 @@ figure ul { padding: 0; }
 .works .subtitle::after { counter-increment: section; content: counters(section, ".") "."; color: #ffab1b; margin-left: 7px; }
 
 .works_list { list-style: none; }
-
-.works_list img { width: 300px; bottom: 10px; left: 50%; position: absolute; opacity: .8; visibility: hidden; display: block; -webkit-transform: scale(0); transform: scale(0); -webkit-transition: all 0.15s cubic-bezier(0.05, 0.03, 0.35, 1); transition: all 0.15s cubic-bezier(0.05, 0.03, 0.35, 1); z-index: -1; border: 5px dashed violet; }
 
 .works_list li { position: relative; border-top: 1px solid var(--rgba-title-color); }
 
@@ -337,8 +335,7 @@ figure ul { padding: 0; }
 @keyframes animScrollingContactTextLeft { 0% { -webkit-transform: translate(-20%, -100%); transform: translate(-20%, -100%); }
   100% { -webkit-transform: translate(-40%, -100%); transform: translate(-40%, -100%); } }
 
-@media screen and (max-width: 767px) { .works_list-item img.is-hover { display: none !important; }
-  .progress_bar { display: none; }
+@media screen and (max-width: 767px) { .progress_bar { display: none; }
   .fsmenu p.card-text { max-width: unset; }
   .blahblah { -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; }
   .description, .images { width: 100%; }

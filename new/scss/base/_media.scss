@@ -1,9 +1,49 @@
-@media screen and (min-width: 768px) and (max-width: 991px) {}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+
+    .about {
+        &_description {
+            flex-direction: row-reverse;
+        }
+        &_avatar {
+            max-width: 220px;
+        }
+        &_text {
+            left: auto;
+            font-size: 2.2rem;
+        }
+    }
+
+    .cases {
+        .card {
+            max-width: 330px;
+            & + .card {
+                margin-left: auto;
+            }
+        }
+    }
+
+}
+
+@media screen and (min-width: 500px) and (max-width: 767px) {
+
+    .cases {
+        &_item {
+            margin: 0 2.5rem;
+        }
+    }
+
+}
+
 @media screen and (max-width: 767px) {
     
     // .works_list-item img.is-hover {
     //     display: none !important;
     // }
+
+    section {
+        margin: 50px 0;
+        &.about { margin-bottom: 25px }
+    }
 
     .progress_bar { display: none }
     
@@ -76,6 +116,7 @@
             left: auto;
             text-align: center;
             font-size: 2rem;
+            margin-bottom: 15px;
 //            font-weight: 900;
 //            font-style: italic;
 //            line-height: 1.5;
@@ -154,6 +195,8 @@
         }
 
     }
+    
+    .full_cases .subtitle { font-size: 1rem }
     
     .cases {
         .card {

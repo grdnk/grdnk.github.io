@@ -1,137 +1,15 @@
 
 // ALL ANIMATION ON LANDING PAGE
 
-@-webkit-keyframes hideDisplay {
+@-webkit-keyframes fullHeight {
     100% {
-      width: 0;
-    }
-  }
-@keyframes hideDisplay {
-    100% {
-        width: 0;
+      height: 100%;
     }
 }
-
-@-webkit-keyframes animMenuReveal {
-    0% {
-        width: 0vw;
-    }
+  
+@keyframes fullHeight {
     100% {
-        width: 100vw;
-    }
-}
-@keyframes animMenuReveal {
-    0% {
-        width: 0vw;
-    }
-    100% {
-        width: 100vw;
-    }
-}
-
-@-webkit-keyframes animMenuRevealLinks {
-    0% {
-        width: 100%;
-    }
-    100% {
-        width: 0%;
-    }
-}
-@keyframes animMenuRevealLinks {
-    0% {
-        width: 100%;
-    }
-    100% {
-        width: 0%;
-    }
-}
-
-@-webkit-keyframes animMenuClose {
-    0% {
-        width: 100vw;
-    //    padding: 8em 3em 3em;
-    }
-    100% {
-        width: 0vw;
-    //    padding: 8em 0 0;
-    }
-}
-@keyframes animMenuClose {
-    0% {
-        width: 100vw;
-    //    padding: 8em 3em 3em;
-    }
-    100% {
-        width: 0vw;
-    //    padding: 8em 0 0;
-    }
-}
-
-@-webkit-keyframes animMenuCloseLinks {
-    0% {
-        width: 0%;
-    }
-    100% {
-        width: 110%;
-    }
-}
-@keyframes animMenuCloseLinks {
-    0% {
-        width: 0%;
-    }
-    100% {
-        width: 110%;
-    }
-}
-
-@-webkit-keyframes animMenuRevealImg {
-    0% {
-        width: 0;
-    }
-    100% {
-        width: 720px;
-    }
-}
-@keyframes animMenuRevealImg {
-    0% {
-        width: 0;
-    }
-    100% {
-        width: 720px;
-    }
-}
-
-@-webkit-keyframes animMenuCloseImg {
-    0% {
-        width: 720px;
-    }
-    100% {
-        width: 0;
-    }
-}
-@keyframes animMenuCloseImg {
-    0% {
-        width: 720px;
-    }
-    100% {
-        width: 0;
-    }
-}
-
-@-webkit-keyframes animScrollingContactTextLeft {
-    0% {
-        transform: translate(-20%, -100%);
-    }
-    100% {
-        transform: translate(-40%, -100%);
-    }
-}
-@keyframes animScrollingContactTextLeft {
-    0% {
-        transform: translate(-20%, -100%);
-    }
-    100% {
-        transform: translate(-40%, -100%);
+        height: 100%;
     }
 }
 

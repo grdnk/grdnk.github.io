@@ -82,7 +82,8 @@
 // repeat styles
 
 section {
-  padding: 50px 0;
+  margin: 100px 0;
+  &.about { margin-bottom: 50px }
 }
 
 .title {
@@ -216,6 +217,7 @@ figure {
     .hidden_text {
       position: relative;
       opacity: 0;
+      margin-bottom: 0;
       // color: transparent;
       transition: 0.5s;
       text-align: center;
@@ -252,21 +254,14 @@ figure {
     display: block;
     width: 0;
     min-height: 100vh;
-    // padding: 50px 0;
-    // pointer-events: auto;
     overflow-y: auto;
-    // -webkit-overflow-scrolling: touch;
     overflow-x: hidden;
-    // color: #fdfcdc;
     position: fixed;
     top: 0;
     bottom: 0;
     right: 0;
     z-index: 10;
     transform: translate3d(0,0,0);
-    // backface-visibility: hidden;
-    // font-size: 1.2rem;
-  
     .card-title {
         font: {
           family: 'tenez', sans-serif;
@@ -413,7 +408,7 @@ figure {
   &_hover {
     width: 400px;
     position: absolute;
-    opacity: .8;
+    opacity: 1;
     right: 20%;
     top: -70px;
     transform: translate(-50%, -50%);
@@ -558,187 +553,6 @@ figure {
 }
 
 // end section about
-
-
-// .fsmenu {
-//   width: 100%;
-//   min-height: 100vh;
-//   position: fixed;
-//   top: 0;
-//   left: 0;
-//   z-index: 10;
-//   overflow: hidden;
-//   display: none;
-//   color: #fff;
-//   // font-size: 1.1rem;
-
-//   .card-title {
-//     font: {
-//       family: 'tenez', sans-serif;
-//       weight: 700;
-//       size: 50px;
-//       display: optional;
-//     }
-//     margin: 0;
-//     &:hover {
-//       cursor: default;
-//       &::after {
-//         background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='squiggle-link' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' viewBox='0 0 20 4'%3E%3Cstyle type='text/css'%3E.squiggle{animation:shift .3s linear infinite;}@keyframes shift {from {transform:translateX(0);}to {transform:translateX(-20px);}}%3C/style%3E%3Cpath fill='none' stroke='%23ff9800' stroke-width='2' class='squiggle' d='M0,3.5 c 5,0,5,-3,10,-3 s 5,3,10,3 c 5,0,5,-3,10,-3 s 5,3,10,3'/%3E%3C/svg%3E");
-//         background-position: 0 100%;
-//         background-size: auto 6px;
-//         background-repeat: repeat-x;
-//         border-bottom: none;
-//       }
-//     }
-//     &::after {
-//       content: '';
-//       display: block;
-//       margin-top: 1.5rem;
-//       margin-bottom: 40px;
-//       width: 4rem;
-//       height: 1rem;
-//       border-bottom: 3px solid #fff;
-//     }
-//   }
-
-//   p.card-text {
-//     max-width: 400px;
-//     letter-spacing: .7px;
-//     line-height: 1.3;
-//     font: {
-//       family: 'futura-pt', sans-serif;
-//       weight: 400;
-//       display: optional;
-//     }
-//   }
-
-//   figure {
-//     letter-spacing: .7px;
-//     line-height: 1.3;
-//     font: {
-//       family: 'futura-pt', sans-serif;
-//       display: optional;
-//     }
-//     ul {
-//       list-style-position: inside;
-//       list-style-type: disc;
-//     }
-//   }
-
-//   a.card-link {
-//     position: relative;
-//     color: #ec407a;
-//     overflow: hidden;
-//     &::after {
-//       content: '';
-//       position: absolute;
-//       background: rgba(236, 64, 122, .25);
-//       left: 12px;
-//       bottom: 0px;
-//       width: calc(100% - 10px);
-//       height: calc(100% - 14px);
-//       transition: .35s cubic-bezier(.25, .1, 0, 2.05);
-//     }
-//     &:hover {
-//       &::after {
-//         left: 0;
-//         width: 100%;
-//         height: 100%;
-//       }
-//     }
-//   }
-
-//   .italy-font { font-style: italic }
-
-// }
-
-// .fsmenu .fsmenu--container {
-// 	width: 0;
-// 	min-height: 100vh;
-// 	padding-top: 60px;
-// 	//  padding: 8em 3em 3em;
-// 	background: #000;
-// 	position: relative;
-// 	right: 0;
-// 	overflow: hidden;
-//   &::after {
-//     content: '';
-//     position: absolute;
-//     display: block;
-//     background: rgba(255, 255, 255, .1);
-//     left: 20%;
-//     top: 0;
-//     width: 1px;
-//     height: 0;
-//     transform: translateX(-50%);
-//   }
-//   &::before {
-//     content: '';
-//     position: absolute;
-//     display: block;
-//     background: rgba(255, 255, 255, .1);
-//     right: 20%;
-//     top: 0;
-//     width: 1px;
-//     height: 0;
-//     transform: translateX(-50%);
-//   }
-//   & .decor-line {
-//     position: absolute;
-//     display: block;
-//     background: rgba(255, 255, 255, .1);
-//     left: 50%;
-//     top: 0;
-//     width: 1px;
-//     height: 0;
-//     transform: translateX(-50%);
-//   }
-// }
-
-  @-webkit-keyframes fullHeight {
-	100% {
-		height: 100%;
-	}
-  }
-  
-  @keyframes fullHeight {
-	100% {
-	  height: 100%;
-	}
-  }
-
-// .fsmenu.is-active .fsmenu--container {
-//     &::after {
-// 		  animation: fullHeight 1s ease-in 1s forwards;
-//     }
-//     &::before {
-// 		  animation: fullHeight 2s ease-in 2.2s forwards;
-//     }
-//     & .decor-line {
-// 		  animation: fullHeight 1.4s ease-in 1.6s forwards;
-//     }
-// }
-
-// .fsmenu.is-active {
-//   display: block;
-//   overflow-y: auto;
-// }
-// .fsmenu.is-active .fsmenu--container {
-//   -webkit-animation: animMenuReveal 1s cubic-bezier(0.19, 1, 0.22, 1) 0s forwards;
-//   animation: animMenuReveal 1s cubic-bezier(0.19, 1, 0.22, 1) 0s forwards;
-// }
-// .fsmenu.close-menu {
-//   display: block;
-//   -webkit-animation: hideDisplay 0.6s forwards;
-//   animation: hideDisplay 0.6s forwards;
-// }
-// .fsmenu.close-menu .fsmenu--container {
-//   width: 100vw;
-//  right: auto;
-//   left: 0;
-//   -webkit-animation: animMenuClose 1s cubic-bezier(1, 0.19, 1, 0.22) 0.6s forwards;
-//   animation: animMenuClose 1s cubic-bezier(1, 0.19, 1, 0.22) 0.6s forwards;
-// }
 
 
 .content__back {

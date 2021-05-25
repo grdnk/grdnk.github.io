@@ -1,15 +1,21 @@
 @media screen and (min-width: 768px) and (max-width: 991px) {
 
     .about {
-        &_description {
+        &__description {
             flex-direction: row-reverse;
         }
-        &_avatar {
+        &__avatar {
             max-width: 220px;
         }
-        &_text {
-            left: auto;
-            font-size: 2.2rem;
+        &-hover {
+            &__text {
+                left: auto;
+                font-size: 2.2rem;
+            }
+            &__img {
+                width: 250px;
+                top: -90px;
+            }
         }
     }
 
@@ -27,7 +33,7 @@
 @media screen and (min-width: 500px) and (max-width: 767px) {
 
     .cases {
-        &_item {
+        &__item {
             margin: 0 2.5rem;
         }
     }
@@ -76,64 +82,71 @@
     }
 
     .description,
-    .images {
+    .img-box {
         width: 100%;
     }
 
     .description { margin-bottom: 30px; }
 
-    .images {
+    .img-box {
         align-items: flex-start;
-        .scroll-el {
+        &__item {
             align-items: flex-start;
             margin-bottom: 30px;
             &::after {
                 font-size: 2rem;
-                margin-left: 15px;
+                // margin-left: 15px;
+            }
+            &:nth-last-child(1) {
+                margin-bottom: 100px;
             }
         }
-        img { max-width: 200px }
+        picture { max-width: 200px }
     }
     
     .about {
-        &_hover {
-            width: 200px;
-            opacity: 1;
-          }
-        &_description {
+        &-hover {
+            &__text {
+    //            position: relative;
+                left: auto;
+                text-align: center;
+                font-size: 2rem;
+                margin-bottom: 15px;
+                max-width: 400px;
+    //            font-weight: 900;
+    //            font-style: italic;
+    //            line-height: 1.5;
+    //            letter-spacing: 1px;
+    //            -webkit-text-fill-color: var(--title-color);
+                &::before {
+                    content: 'hah, touch to show gif';
+                    font-size: .6rem;
+                    top: 10px;
+                }
+            }
+            &__img {
+                width: 200px;
+                // right: 25%;
+                // opacity: 1;
+            }
+        }
+        &__description {
 //            display: flex;
 //            justify-content: center;
 //            align-items: center;
             flex-direction: column;
         }
-        &_avatar {
+        &__avatar {
 //            opacity: .2;
             max-width: 220px;
 //            border-radius: 500px;
-        }
-        &_text {
-//            position: relative;
-            left: auto;
-            text-align: center;
-            font-size: 2rem;
-            margin-bottom: 15px;
-//            font-weight: 900;
-//            font-style: italic;
-//            line-height: 1.5;
-//            letter-spacing: 1px;
-//            -webkit-text-fill-color: var(--title-color);
-            &::before {
-                content: 'hah, touch to show gif';
-                font-size: .6rem;
-                top: 10px;
-            }
         }
 //        .cv {
 //            display: flex;
 //            align-items: center;
 //            justify-content: flex-start;
 //        }
-        .contact {
+        .contact-list {
             font-size: 14px;
 //            list-style: none;
 //            display: flex;
@@ -149,50 +162,45 @@
         }
 
 
-        #burger-wrapper button {
-            border: none;
-            margin: 0;
-            padding: 0;
-            width: inherit;
-            height: inherit;
-            overflow: visible;
-            background: transparent;
-            color: var(--title-color);
-            font-family: inherit;
-            font-weight: 500;
-            font: inherit;
-            line-height: normal;
-            text-align: center;
-            text-decoration: none;
-            outline: none;
-            font-size: 9px;
-            letter-spacing: 1px;
-            text-transform: uppercase;
-            cursor: pointer;
-            white-space: normal;
-            -webkit-font-smoothing: inherit;
-            -moz-osx-font-smoothing: inherit;
-            -webkit-appearance: none;
-            &:hover { color: var(--cv-button) }
+        // #button_wrapper button {
+        //     border: none;
+        //     margin: 0;
+        //     padding: 0;
+        //     width: inherit;
+        //     height: inherit;
+        //     overflow: visible;
+        //     background: transparent;
+        //     color: var(--title-color);
+        //     font-family: inherit;
+        //     font-weight: 500;
+        //     font: inherit;
+        //     line-height: normal;
+        //     text-align: center;
+        //     text-decoration: none;
+        //     outline: none;
+        //     font-size: 9px;
+        //     letter-spacing: 1px;
+        //     text-transform: uppercase;
+        //     cursor: pointer;
+        //     white-space: normal;
+        //     -webkit-font-smoothing: inherit;
+        //     -moz-osx-font-smoothing: inherit;
+        //     -webkit-appearance: none;
+        //     &:hover { color: var(--cv-button) }
+        // }
+
+        #button_wrapper {
+            margin: unset;
+            margin-left: auto;
         }
 
-        #burger-wrapper {
-            margin: 0 auto;
-            width: 140px;
-            height: 140px;
-            display: flex;
-            position: relative;
-            justify-content: center;
-            align-items: center;
-        }
-
-        #burger-circle {
-            width: 70px;
-            height: 70px;
-            border-radius: 100px;
-            position: absolute;
-            border: 1px solid $yellow;
-        }
+        // #button_circle {
+        //     width: 70px;
+        //     height: 70px;
+        //     border-radius: 100px;
+        //     position: absolute;
+        //     border: 1px solid $yellow;
+        // }
 
     }
     
@@ -203,21 +211,19 @@
             flex: auto;
             & + .card { margin-top: 30px; margin-left: 0; }
         }
-        &_item {
-            .tr-bl {
-                .hidden_text {
-                    opacity: 1;
-                    transform: translateY(-50%);
-                    .bg_text {
-                      color: var(--cv-button);
-                      &::after { width: 100% }
-                    }
+        &__item {
+            .hidden_text {
+                opacity: 1;
+                transform: translateY(-50%);
+                .bg_text {
+                    color: var(--cv-button);
+                    &::after { width: 100% }
                 }
             }
         }
     }
     
-    ul.works_list {
+    ul.works-list {
         li {
             a {
                 font-size: 1.7rem;

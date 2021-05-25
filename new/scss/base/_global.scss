@@ -56,8 +56,8 @@ img {
 html {
   box-sizing: border-box;
   hyphens: auto;
-	-webkit-text-size-adjust: 100%;
-	-ms-text-size-adjust: 100%;
+	// -webkit-text-size-adjust: 100%;
+	// -ms-text-size-adjust: 100%;
 }
 
 *, *::before, *::after {
@@ -76,7 +76,7 @@ body {
       style: normal;
       display: fallback;
   }
-  font-size: 100%;
+  font-size: 1rem;
   color: var(--title-color);
   overflow-anchor: auto;
   scroll-behavior: smooth;

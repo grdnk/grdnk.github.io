@@ -7,8 +7,8 @@
 // });
 
 // "Michael" gif --last section
-$(".about_text").hover(function(){
-    $(this).parent().find("picture").addClass("is-hover");
+$(".about-hover").hover(function(){
+    $(this).parent().find(".about-hover__img").addClass("is-hover");
     }, function() {
-    $(this).parent().find("picture").removeClass("is-hover");
+    $(this).parent().find(".about-hover__img").removeClass("is-hover");
 });

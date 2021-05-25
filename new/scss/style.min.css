@@ -229,7 +229,7 @@ figure ul { padding: 0; }
 
 .block-anim.is-active .fix-wrapper .decor-line { -webkit-animation: fullHeight 1.4s ease-in 1.6s forwards; animation: fullHeight 1.4s ease-in 1.6s forwards; }
 
-.block-anim .fix-wrapper { position: relative; display: block; background: #000; color: #fdfcdc; padding-top: 50px; overflow: hidden; }
+.block-anim .fix-wrapper { position: relative; display: block; width: 100%; background: #000; color: #fdfcdc; padding-top: 50px; overflow: hidden; }
 
 .block-anim .fix-wrapper::after { content: ''; position: absolute; display: block; background: rgba(255, 255, 255, 0.1); left: 20%; top: 0; width: 1px; height: 0; -webkit-transform: translateX(-50%); transform: translateX(-50%); }
 

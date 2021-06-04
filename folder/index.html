@@ -1,12 +1,25 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="utf-8">
     <link type="image/x-icon" rel="shortcut icon" href="favicon.ico">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Hrdnk</title>
+    <meta name="description" content="Markup developer, html coder, hrdnk">
     <link rel="stylesheet" href="scss/style.min.css">
     <link rel="stylesheet" href="https://use.typekit.net/vmz2gfd.css">
+
+    <meta property="og:title" content="Hrdnk">
+    <meta property="og:description" content="Markup developer portfolio page">
+    <meta property="og:image" content="https://hrdnk.github.io/hrdnk_trbnl.png">
+    <meta property="og:url" content="https://hrdnk.github.io/">
+
+    <meta name="twitter:title" content="Hrdnk">
+    <meta name="twitter:description" content="Markup developer portfolio page">
+    <meta name="twitter:image" content="https://hrdnk.github.io/hrdnk_trbnl.png">
+
+    <meta name="msapplication-TileColor" content="#FFAB1B">
+    <meta name="theme-color" content="#FFAB1B">
 </head>
 <body>
    
@@ -18,40 +31,46 @@
 
 <!-- PROGRESS BAR -->
 
-<div class="percent">
+<div class="progress_bar">
     <div class="fill"></div>
-    <div class="counter"><h1 class="num"></h1></div>
+    <div class="num"><p class="count"></p></div>
 </div>
 
 <!-- END PROGRESS BAR -->
 
 <!-- CONTENT PART -->
 
-<!--    <div class="smooth-scroll-wrapper" id="main">-->
-
 <section class="works">
     <div class="container">
-        <div class="row">
-            <h2 class="title">Basic projects</h2>
-            <div class="col">
-                <h3 class="subtitle">Landing page</h3>
-                <ul class="works_list">
-                    <li><a href="#">Cooco Print</a></li>
-                    <li><a href="#">FinWiki</a></li>
-                    <li><a href="#">Billing</a></li>
-                </ul>
-            </div>
-            <div class="col">
-                <h3 class="subtitle">Test cases</h3>
-                <ul class="works_list">
-                    <li><a href="#">Border</a></li>
-                    <li><a href="#">Echo</a></li>
-                    <li><a href="#">Triangle</a></li>
-                    <li><a href="#">Carousel</a></li>
-                    <li><a href="#">Pari Match</a></li>
-                </ul>
-            </div>
-        </div>
+        <h2 class="title">Basic projects</h2>
+        <figure>
+            <figcaption class="subtitle">Landing page</figcaption>
+            <ul class="works-list">
+                <li><a href="#">Cooco Print</a></li>
+                <li><a href="#">FinWiki</a></li>
+                <li><a href="#">Billing</a></li>
+            </ul>
+        </figure>            
+        <figure>
+            <figcaption class="subtitle">Test cases</figcaption>
+            <ul class="works-list">
+                <li><a href="#">Border</a></li>
+                <li class="item">
+                    <a href="#">Echo</a>
+                    <span class="style">
+                        <svg viewBox="0 -10 511.98645 511" width="18px" xmlns="http://www.w3.org/2000/svg"><path d="m499.574219 188.503906c-3.199219-9.921875-11.988281-16.9375-22.398438-17.898437l-141.355469-12.84375-55.894531-130.835938c-4.117187-9.578125-13.503906-15.765625-23.933593-15.765625-10.433594 0-19.820313 6.207032-23.9375 15.808594l-55.890626 130.816406-141.378906 12.839844c-10.386718.941406-19.175781 7.957031-22.378906 17.878906-3.21875 9.921875-.234375 20.777344 7.617188 27.648438l106.859374 93.695312-31.511718 138.773438c-2.300782 10.199218 1.664062 20.734375 10.136718 26.878906 4.519532 3.328125 9.875 4.992188 15.230469 4.992188 4.628907 0 9.238281-1.234376 13.355469-3.710938l121.898438-72.894531 121.875 72.875c8.917968 5.351562 20.160156 4.882812 28.609374-1.238281 8.46875-6.144532 12.4375-16.683594 10.132813-26.882813l-31.507813-138.769531 106.859376-93.699219c7.847656-6.867187 10.835937-17.726563 7.613281-27.667969zm0 0" fill="#ffab1b"/></svg>
+                    </span>
+                </li>
+                <li><a href="#">Triangle</a></li>
+                <li class="item">
+                    <a href="#">Carousel</a>
+                    <span class="style">
+                        <svg viewBox="0 -10 511.98645 511" width="18px" xmlns="http://www.w3.org/2000/svg"><path d="m499.574219 188.503906c-3.199219-9.921875-11.988281-16.9375-22.398438-17.898437l-141.355469-12.84375-55.894531-130.835938c-4.117187-9.578125-13.503906-15.765625-23.933593-15.765625-10.433594 0-19.820313 6.207032-23.9375 15.808594l-55.890626 130.816406-141.378906 12.839844c-10.386718.941406-19.175781 7.957031-22.378906 17.878906-3.21875 9.921875-.234375 20.777344 7.617188 27.648438l106.859374 93.695312-31.511718 138.773438c-2.300782 10.199218 1.664062 20.734375 10.136718 26.878906 4.519532 3.328125 9.875 4.992188 15.230469 4.992188 4.628907 0 9.238281-1.234376 13.355469-3.710938l121.898438-72.894531 121.875 72.875c8.917968 5.351562 20.160156 4.882812 28.609374-1.238281 8.46875-6.144532 12.4375-16.683594 10.132813-26.882813l-31.507813-138.769531 106.859376-93.699219c7.847656-6.867187 10.835937-17.726563 7.613281-27.667969zm0 0" fill="#ffab1b"/></svg>
+                    </span>
+                </li>
+                <li><a href="#">Pari Match</a></li>
+            </ul>
+        </figure> 
     </div>
 </section>       
 
@@ -61,8 +80,8 @@
         <h3 class="subtitle">full commercial projects and small description (markup only)</h3>
         <div class="cases">
             <div class="card">
-                <div class="fsmenu">
-                    <div class="fsmenu--container">
+                <div class="block-anim">
+                    <div class="fix-wrapper">
                         <div class="decor-line"></div>
                         <div class="container">
                             <button class="content__back" aria-label="Back to main view"></button>
@@ -71,36 +90,49 @@
                                     <h5 class="card-title">itProger</h5>
                                     <p class="card-text">itProger is online school teach of programming language, from <span class="italy-font">Ruby</span> to <span class="italy-font">Python</span> and <span class="italy-font">JS</span>, authors methods teaching, interesting tasks for practical skills. Have a colorful fresh design. Total &#43;&#45; 12 pages</p>
                                     <p class="card-text"><a class="card-link" href="https://www.youtube.com/c/gosha_dudar">YouTube</a></p>
-                                    <ul class="prod_list">
-                                        <p>Production list:</p>
-                                        <li class="prod_list-item">itProger</li>
-                                        <li class="prod_list-item">itProger Studio</li>
-                                        <li class="prod_list-item">Front-end courses</li>
-                                    </ul>
+                                    <figure>
+                                        <figcaption>Production list:</figcaption>
+                                        <ul class="prod-list">
+                                            <li class="prod-list__item">itProger</li>
+                                            <li class="prod-list__item">itProger Studio</li>
+                                            <li class="prod-list__item">Front-end courses</li>
+                                        </ul>
+                                    </figure>
                                 </div>
-                                <div class="images">
-                                    <div class="scroll-el">
-                                        <img src="img/works/itprgr/screen_main.png" alt="">
+                                <div class="img-box">
+                                    <div class="img-box__item">
+                                        <picture>
+                                            <source srcset="img/works/itprgr/screen_main.webp" type="image/webp">
+                                            <source srcset="img/works/itprgr/screen_main.png" type="image/png">
+                                            <img src="img/works/itprgr/screen_main.webp" alt="itProger index page">
+                                        </picture>
+                                        <!-- <img src="img/works/itprgr/screen_main.png" alt=""> -->
                                     </div>
-                                    <div class="scroll-el">
-                                        <img src="img/works/itprgr/screen_main.png" alt="">
+                                    <div class="img-box__item">
+                                        <picture>
+                                            <source srcset="img/works/itprgr/screen_main.webp" type="image/webp">
+                                            <source srcset="img/works/itprgr/screen_main.png" type="image/png">
+                                            <img src="img/works/itprgr/screen_main.webp" alt="itProger index page">
+                                        </picture>
+                                        <!-- <img src="img/works/itprgr/screen_main.png" alt=""> -->
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="next">
-                            <a href="#"></a>
-                            <p class="next_link">Next case 
-                                <img src="img/arrow_right.svg" alt="">
-                            </p>
-                            <h2 class="next_name">Pharm13</h2>
-                        </div>
                     </div>
                 </div>
-                <div class="cases_item">
-                    <img src="img/works/full/itprgr.png" alt="">
-                    <div class="tr-bl">
-                        <h4 class="cases_title">Itprgr</h4>
+                <div class="cases__item">
+                    <picture>
+                        <source srcset="img/works/full/itprgr.webp" type="image/webp">
+                        <source srcset="img/works/full/itprgr.png" type="image/png">
+                        <img src="img/works/full/itprgr.webp" alt="itProger">
+                    </picture>
+                    <!-- <img src="img/works/full/itprgr.png" alt=""> -->
+                    <div class="cases__overlay">
+                        <h4 class="cases__title">Itprgr</h4>
+                        <p class="hidden_text">
+                            <span class="bg_text">view project</span>
+                        </p>
                     </div>
                 </div>
             </div>
@@ -114,28 +146,43 @@
                                 <div class="description">
                                     <h5 class="card-title">Pharm13</h5>
                                     <p class="card-text">Welcome to online store with wonderful design and UX, project split on two parts, mobile <span class="italy-font">&amp;</span> tablet and desktop version (dont ask me why, i dont know), project translated to three lang, total pages - 44</p>
-                                    <ul class="prod_list">
-                                        <p>Production list:</p>
-                                        <li class="prod_list-item">Store Pharm13</li>
-                                        <li class="prod_list-item">E-mail's</li>
-                                        <li class="prod_list-item">Shop landing</li>
-                                        <li class="prod_list-item">CRM Dashboard</li>
-                                        <li class="prod_list-item">Viagra landings</li>
-                                    </ul>
+                                    <figure>
+                                        <figcaption>Production list:</figcaption>
+                                        <ul class="prod-list">
+                                            <li class="prod-list__item">Store Pharm13</li>
+                                            <li class="prod-list__item">E-mail's</li>
+                                            <li class="prod-list__item">Shop landing</li>
+                                            <li class="prod-list__item">CRM Dashboard</li>
+                                            <li class="prod-list__item">Viagra landings</li>
+                                        </ul>
+                                    </figure>
                                 </div>
-                                <div class="images">
-                                    <div class="scroll-el">
-                                        <img src="img/works/pharm13/screen_main.png" alt="">
+                                <div class="img-box">
+                                    <div class="img-box__item">
+                                        <picture>
+                                            <source srcset="img/works/pharm13/screen_main.webp" type="image/webp">
+                                            <source srcset="img/works/pharm13/screen_main.png" type="image/png">
+                                            <img src="img/works/pharm13/screen_main.webp" alt="Pharm13 index page">
+                                        </picture>
+                                        <!-- <img src="img/works/pharm13/screen_main.png" alt=""> -->
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="cases_item">
-                    <img src="img/works/full/pharm13.png" alt="">
-                    <div class="tr-bl">
-                        <h4 class="cases_title">Pharm13</h4>
+                <div class="cases__item">
+                    <picture>
+                        <source srcset="img/works/full/pharm13.webp" type="image/webp">
+                        <source srcset="img/works/full/pharm13.png" type="image/png">
+                        <img src="img/works/full/pharm13.webp" alt="Pharm13">
+                    </picture>
+                    <!-- <img src="img/works/full/pharm13.png" alt=""> -->
+                    <div class="cases__overlay">
+                        <h4 class="cases__title">Pharm13</h4>
+                        <p class="hidden_text">
+                            <span class="bg_text">view project</span>
+                        </p>
                     </div>
                 </div>
             </div>
@@ -145,16 +192,23 @@
 
 <section class="about">
     <div class="container">
-        <div class="about_description">
-            <img src="img/avatar/3.jpg" class="about_avatar" alt="">
+        <div class="about__description">
+            <img src="img/avatar/3.jpg" class="about__avatar" alt="">
             <div class="flex-column">
-                <p class="about_text">
-                    Hi,<br>
-                    i am Heorhii, markup developer and human
-                    <img class="about_hover" src="https://media.giphy.com/media/xYHscQ1Np55i8/giphy.gif" alt="">
-                </p>
+                <div class="about-hover">
+                    <h1 class="about-hover__text">
+                        Hi,<br>
+                        i am Heorhii, markup developer and human
+                    </h1>
+                    <picture class="about-hover__img">
+                        <source srcset="https://i.giphy.com/media/xYHscQ1Np55i8/giphy.webp" type="image/webp">
+                        <source srcset="https://media.giphy.com/media/xYHscQ1Np55i8/giphy.gif" type="image/gif">
+                        <img src="https://i.giphy.com/media/xYHscQ1Np55i8/giphy.webp">
+                    </picture>                    
+                    <!-- <img class="about__hover" src="https://media.giphy.com/media/xYHscQ1Np55i8/giphy.gif" alt=""> -->
+                </div>
                 <div class="cv">
-                    <ul class="contact">
+                    <ul class="contact-list">
                         <li>
                             <span class="accent">
                                 e-mail:
@@ -166,12 +220,12 @@
                             <a href="skype:zgorodenko?chat">zgorodenko</a>
                         </li>
                     </ul>
-                    <div id="burger-wrapper">
-                        <div id="burger-circle"></div>
-                        <button id="menu-burger">
-                            <!--  this fucking shit, i know, but in a tag none download attr, else bad rendering  -->
-                            <a href="#">
-                                <span class="menu-burger-text">resume</span>
+                    <div id="button_wrapper">
+                        <div id="button_circle"></div>
+                        <button id="button_link">
+                            <!--  this fucking shit, i know, but else circle bad rendering  -->
+                            <a href="tech-cv__hrdnk.docx" download>
+                                <span class="button_link__text">resume</span>
                             </a>
                         </button>
                     </div>
@@ -180,45 +234,25 @@
         </div>
     </div>
 </section>
-<!--    </div>-->
 
 <!-- END CONTENT PART -->
 
-<!-- THEME TOGGLE -->
+<!-- TOGGLE THEME -->
 
 <div class="pin">
     <svg id="light" enable-background="new 0 0 511.98 511.98" height="18" viewBox="0 0 511.98 511.98" xmlns="http://www.w3.org/2000/svg" fill="#ffab1b"><g><path d="m139.702 317.377c13.119 11.113 21.818 26.169 24.961 42.604h76.327v-106.899c-25.849-6.678-45-30.195-45-58.102h30c0 16.542 13.458 30 30 30s30-13.458 30-30h30c0 27.906-19.151 51.424-45 58.102v106.898h76.344c3.177-16.431 11.959-31.562 25.202-42.823 40.326-34.29 63.454-84.289 63.454-137.177 0-161.352-196.781-240.593-308.844-125.467-73.136 75.138-66.884 195.57 12.556 262.864z"/><path d="m255.99 511.98c33.084 0 60-26.916 60-60h-120c0 33.084 26.916 60 60 60z"/><path d="m165.99 389.98h180v32h-180z"/></g></svg>
 </div>
 
-<!-- END THEME TOGGLE -->
-    
-    <script src="js/themes.js"></script>
-<!--    <script src="https://kit.fontawesome.com/a9de9cd4d7.js" crossorigin="anonymous"></script>-->
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-    <script src="js/gsap.min.js"></script>
-<!--    <script src="js/TweenMax.min.js"></script>-->
+<!-- END TOGGLE THEME -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.0.1/gsap.min.js"></script>
+    <script src="js/gsap_animation.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/gifs.js"></script>
+    <script src="js/progress_bar.js"></script>
+    <script src="js/cards.js"></script>
     <script src="js/magnetic_button.js"></script>
     <script src="js/pin.js"></script>
-<!--    <script src="js/smooth_scroll.js"></script>-->
-    <script src="js/progress_scroll.js"></script>
-<!--    <script src="js/tilt.jquery.min.js"></script>-->
-    <script src="js/cards.js"></script>
-    <script>
-
-        var tl = gsap.timeline();
-        tl.to("#preloader", { duration: 1.5, height: 0, ease: "expo.inOut" }),
-        tl.from(".title", { duration: 1, y: 20, opacity: 0, ease: "expo.inOut" }, "-=0.5"),
-        tl.from(".subtitle, .works_list", { duration: 0.7, y: 20, opacity: 0, ease: "expo.inOut", stagger: 0.1 }, "-=0.7");
-
-  </script>
-  <script>
-// Show & hide the images
-$(".about_text").hover(function(){
-  $(this).parent().find(".about_hover").addClass("is-active");
-  }, function() {
-  $(this).parent().find(".about_hover").removeClass("is-active");
-  });
-
-    </script>
+    <script src="js/themes.js"></script>
 </body>
 </html>

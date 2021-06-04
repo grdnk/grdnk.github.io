@@ -1,24 +1,24 @@
-$('#burger-wrapper').mouseleave(function(e){
+$('#button_wrapper').mouseleave(function(e){
 			     TweenMax.to(this, 0.3, {scale: 1});
-			     TweenMax.to('#burger-circle, #menu-burger', 0.3,{scale:1, x: 0, y: 0});			  
+			     TweenMax.to('#button_circle, #button_link', 0.3,{scale:1, x: 0, y: 0});			  
 			});
 			
-			$('#burger-wrapper').mouseenter(function(e){
+			$('#button_wrapper').mouseenter(function(e){
 			     TweenMax.to(this, 0.3, {transformOrigin: '0 0', scale: 1});
-			     TweenMax.to('#burger-circle', 0.3,{scale: 1.1});
+			     TweenMax.to('#button_circle', 0.3,{scale: 1.1});
 			});
 			
-			$('#burger-wrapper').mousemove(function(e){   
+			$('#button_wrapper').mousemove(function(e){   
 			  callParallax(e);
 			});
 			
 			function callParallax(e){
-			  parallaxIt(e, '#burger-circle', 60);
-			  parallaxIt(e, '#menu-burger', 40);
+			  parallaxIt(e, '#button_circle', 60);
+			  parallaxIt(e, '#button_link', 40);
 			}
 			
 			function parallaxIt(e, target, movement){
-			  var $this = $('#burger-wrapper');
+			  var $this = $('#button_wrapper');
 			  var boundingRect = $this[0].getBoundingClientRect();
 			  var relX = e.pageX - boundingRect.left;
 			  var relY = e.pageY - boundingRect.top;

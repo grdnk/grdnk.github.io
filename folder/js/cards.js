@@ -1,154 +1,87 @@
-//$(document).ready(function(){
-//
-//	
-//	$('.cases_item').click(function(){
-//		
-//        var $this = $( this );
-//        $this.toggleClass('is-active');
-//        
-//		if ($this.hasClass('is-active')){
-//			$('.fsmenu').removeClass('close-menu');
-//			$('.fsmenu').addClass('is-active');
-//            $('body').css('overflow', 'hidden');
-//		} else{
-//			$('.fsmenu').removeClass('close-menu');
-//			$('.fsmenu').addClass('is-active');
-//            $('body').css('overflow', 'hidden');
-//		};
-//        
-//	});
-//    
-//    
-//	$('.content__back').click(function(){
-//		
-//        $('.fsmenu').removeClass('is-active');
-//        $('.fsmenu').addClass('close-menu');
-//        $('body').css('overflow', '');
-//        
-//	});
-//	
-//				
-//});
+
+function hideScroll() {
+    document.body.classList.add('no-scroll');
+
+    document.body._scrollTop = window.pageYOffset;
+    document.body.style.position = 'fixed';
+    if (document.body._hasScrollbar) {
+        document.body.style.width = `calc(100% - ${document.body._getScrollbarSize()}px)`;
+    } else {
+        document.body.style.width = '100%';
+    }
+    document.body.style.top = -document.body._scrollTop + 'px';
+}
+
+function _getScrollbarSize() {
+    let outer = document.createElement('div');
+    outer.style.visibility = 'hidden';
+    outer.style.width = '100px';
+    outer.style.msOverflowStyle = 'scrollbar';
+
+    document.body.appendChild(outer);
+
+    let widthNoScroll = outer.offsetWidth;
+    outer.style.overflow = 'scroll';
+
+    let inner = document.createElement('div');
+    inner.style.width = '100%';
+    outer.appendChild(inner);
+
+    let widthWithScroll = inner.offsetWidth;
+
+    outer.parentNode.removeChild(outer);
+
+    return widthNoScroll - widthWithScroll;
+}
+
+function _hasScrollbar() {
+    return document.body.scrollHeight > document.body.clientHeight;
+}
+
+function showScroll() {
+    document.body.classList.remove('no-scroll');
+
+    document.body.style.position = '';
+    document.body.style.width = '';
+    document.body.style.top = '';
+    window.scroll(0, document.body._scrollTop);
+}
 
 
+let anim = $('.cases__item').parent().find('.block-anim');
 
+    $('.cases__item').on('click', function(){
 
-$(document).ready(function(){
+        var $this = $( this );
 
-	
-    $('.cases_item').on('click', function(){		
-        $(this).parent().find('.fsmenu').removeClass('close-menu');
-        $(this).parent().find('.fsmenu').addClass('is-active');
-        $('body').css('overflow', 'hidden');
-        document.ontouchmove = function (e) {
-            e.preventDefault();
-        };
+        $(this).parent().find('.block-anim').addClass('is-active');
+
+        if($(this).parent().find('.block-anim').hasClass('is-active')) {
+        $(this).parent().find('.block-anim').animate({'width': '100%'}, 400, 'swing', function(){
+            $(this).parent().find('.block-anim').css({'left': 0, 'right': ''});
+            hideScroll();
+        });
+
+    };
+   
+   
+    $('.content__back').on('click', function(){
+           anim.removeClass('is-active');
+           showScroll();
+
+        //    setTimeout(function() {
+        //     anim.animate({'width': '0'}, 400, 'swing', function(){
+        //         anim.css({'right': 0, 'left': ''});
+        //         showScroll();
+        //        });
+        //     }, 300 );
+
+           anim.animate({'width': '0'}, 400, 'swing', function(){
+             anim.css({'right': 0, 'left': ''});
+            //  showScroll();
+            });
+
     });
-	
-	$('.content__back').click(function(){
-		
-        $(this).parent().parent().parent().parent().find('.fsmenu').addClass('close-menu');
-        $(this).parent().parent().parent().parent().find('.fsmenu').removeClass('is-active');
-        $('body').css('overflow', '');
-        document.ontouchmove = function (e) {
-            return true;
-        };
-	});
-    
-				
+   
+   
 });
-
-
-//$(function() {
-//  $('.btn').click(function() {
-//    var modal = $(this).data('modal');
-////    $('.fade').fadeIn(500);
-//    $('#' + modal).addClass('active');
-//    $('body').css('overflow', 'hidden');
-//  });
-//
-//  $('.close').click(function() {
-////    $('.fade').fadeOut(500);
-//    $('.modal').removeClass('active');
-//    $('body').css('overflow', '');
-//  });
-//
-//  $(document).keydown(function(e) {
-//    if (e.keyCode === 27) {
-//      e.stopPropagation();
-////      $('.fade').fadeOut(500);
-//      $('.modal').removeClass('active');
-//      $('body').css('overflow', '');
-//    }
-//  });
-//});
-
-
-
-//let anim = $('.cases_item').parent().find('.block-anim');
-//
-//$('.cases_item').on('click', function(){
-//    
-//          var $this = $( this );
-//    
-//          $(this).parent().find('.block-anim').addClass('is-active');
-//
-//          if($(this).parent().find('.block-anim').hasClass('is-active')) {
-//            $(this).parent().find('.block-anim').animate({'width': '100%'}, 400, 'swing', function(){
-//              $(this).parent().find('.block-anim').css({'left': 0, 'right': ''});
-//              $('body').css('overflow', 'hidden');
-//              $('body').css('-webkit-overflow-scrolling', 'touch');
-//              $('body').css('pointer-events', 'none');
-//            });
-//          };
-//    
-//    
-//        $('.content__back').click(function(){
-//            
-//            anim.removeClass('is-active');
-//
-//            anim.animate({'width': '0'}, 400, 'swing', function(){
-//              anim.css({'right': 0, 'left': ''});
-//              $('body').css('overflow', '');
-//              $('body').css('-webkit-overflow-scrolling', '');
-//              $('body').css('pointer-events', 'auto');
-//            });
-//
-//        });
-//    
-//    
-//});
-
-
-
-
-//$(document).ready(function(){
-//
-//	
-//	$('.hamburger').click(function(){
-//		
-//		var $this = $( this );
-//		
-//		if ($this.hasClass('is-active')){
-//			$('.fsmenu, .logo').removeClass('is-active');
-//			$('.fsmenu, .logo').addClass('close-menu');
-//            $('body').css('overflow', '');
-//		} else{
-//			$('.fsmenu, .logo').removeClass('close-menu');
-//			$('.fsmenu, .logo').addClass('is-active');
-//            $('body').css('overflow', 'hidden');
-//		};
-//		$this.toggleClass('is-active');
-//	});
-//	
-//	$( ".fsmenu--list-element" ).hover(
-//		function() {
-//			$( this ).addClass('open');
-//			$( this ).removeClass('is-closing');
-//		}, function() {
-//			$( this ).removeClass('open');
-//			$( this ).addClass('is-closing');
-//		}
-//	);
-//				
-//});

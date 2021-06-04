@@ -52,10 +52,10 @@ let anim = $('.cases__item').parent().find('.block-anim');
 
     $('.cases__item').on('click', function(){
 
+        hideScroll();
         var $this = $( this );
 
         $(this).parent().find('.block-anim').addClass('is-active');
-        hideScroll();
 
         if($(this).parent().find('.block-anim').hasClass('is-active')) {
         $(this).parent().find('.block-anim').animate({'width': '100%'}, 400, 'swing', function(){
